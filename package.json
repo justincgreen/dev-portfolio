@@ -2,6 +2,7 @@
   "name": "dev-portfolio",
   "type": "module",
   "version": "0.0.1",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -11,5 +12,8 @@
   },
   "dependencies": {
     "astro": "^3.0.12"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
   }
 }
