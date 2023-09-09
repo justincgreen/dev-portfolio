@@ -1,0 +1,13 @@
+// Spacing 
+.padding {
+  &--top {
+    &--sm {
+      padding-top: var(--padding-base);
+    }
+  }
+  &--bottom {
+    &--sm {
+      padding-bottom: var(--padding-base);
+    }
+  }
+}

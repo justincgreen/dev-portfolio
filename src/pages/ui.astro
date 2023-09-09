@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Style Guide">
+  <main>
+    <h1 class="padding--top--sm padding--bottom--sm">Style Guide</h1>
+    <p>Paragraph text</p>
+    
+    <div class="c-badge__group">
+      <div class="c-badge">Badge 1</div>
+      <div class="c-badge">Badge 2</div>
+      <div class="c-badge">Badge 3</div>
+    </div>
+  </main>
+</Layout>
+
+<style lang="scss">
+  main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .c-badge {
+    display: inline-flex;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: var(--c-green--darkest);
+    font-size: var(--font-size--sm);
+    
+    &__group {
+      display: flex;
+      gap: 10px;
+    }
+  }
+</style>
