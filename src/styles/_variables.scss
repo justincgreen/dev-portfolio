@@ -20,10 +20,23 @@
 :root {
   --font-family-body: "Montserrat", sans-serif;
   --font-family-primary: "Montserrat", sans-serif;
-  --font-size--sm: 12px;
+  --font-size--xs: 1em;
+  --font-size--sm: 1.5em;
+  --font-size--md: 1.8em;
+  --font-size--lg: 2em;
+  --font-size--xl: 2.5em;
+  --font-size--xxl: 3em;
+  --font-size--jumbo: 4em;
 }
 
 // Spacing 
 :root {
   --padding-base: 20px;
+  --padding-half: calc(var(--padding-base) - 10px);
+  --padding-double: calc(var(--padding-base) * 2);
+  --padding-triple: calc(var(--padding-base) * 3);
+  --margin-base: 20px;
+  --margin-half: calc(var(--margin-base) - 10);
+  --margin-double: calc(var(--margin-base) * 2);
+  --margin-triple: calc(var(--margin-base) * 3);
 }

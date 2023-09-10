@@ -4,10 +4,16 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Style Guide">
   <main>
-    <h1 class="padding--top--sm padding--bottom--sm">Style Guide</h1>
-    <p>Paragraph text</p>
+    <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green">Headings</h1>
+    <h1 class="padding--top--sm padding--bottom--sm">(H1) Heading 1</h1>
+    <h2 class="padding--top--sm padding--bottom--sm">(H2) Heading 2</h2>
+    <h3 class="padding--top--sm padding--bottom--sm">(H3) Heading 3</h3>
+    <h4 class="padding--top--sm padding--bottom--sm">(H4) Heading 4</h4>
+    <h5 class="padding--top--sm padding--bottom--sm">(H5) Heading 5</h5>
+    <h6 class="padding--top--sm padding--bottom--sm">(H6) Heading 6</h6>
+    <p class="padding--bottom--sm">Paragraph text</p>
     
-    <div class="c-badge__group">
+    <div class="c-badge__group padding--bottom--sm">
       <div class="c-badge">Badge 1</div>
       <div class="c-badge">Badge 2</div>
       <div class="c-badge">Badge 3</div>
@@ -17,7 +23,7 @@ import Layout from '../layouts/Layout.astro';
 
 <style lang="scss">
   main {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   
@@ -26,7 +32,7 @@ import Layout from '../layouts/Layout.astro';
     padding: 10px 15px;
     border-radius: 20px;
     background-color: var(--c-green--darkest);
-    font-size: var(--font-size--sm);
+    font-size: var(--font-size--xs);
     
     &__group {
       display: flex;

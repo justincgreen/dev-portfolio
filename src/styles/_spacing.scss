@@ -1,13 +1,118 @@
 // Spacing 
 .padding {
   &--top {
+    &--xs {
+      padding-top: var(--padding-half);
+    }
     &--sm {
       padding-top: var(--padding-base);
     }
+    &--md {
+      padding-top: var(--padding-double);
+    }
+    &--lg {
+      padding-top: var(--padding-triple);
+    }
   }
   &--bottom {
+    &--xs {
+      padding-bottom: var(--padding-half);
+    }
     &--sm {
       padding-bottom: var(--padding-base);
+    }
+    &--md {
+      padding-bottom: var(--padding-double);
+    }
+    &--lg {
+      padding-bottom: var(--padding-triple);
+    }
+  }
+  &--left {
+    &--xs {
+      padding-left: var(--padding-half);
+    }
+    &--sm {
+     padding-left: var(--padding-base);
+    }
+    &--md {
+      padding-left: var(--padding-double);
+    }
+    &--lg {
+      padding-left: var(--padding-triple);
+    }
+  }
+  &--right {
+    &--xs {
+      padding-right: var(--padding-half);
+    }
+    &--sm {
+     padding-right: var(--padding-base);
+    }
+    &--md {
+      padding-right: var(--padding-double);
+    }
+    &--lg {
+      padding-right: var(--padding-triple);
+    }
+  }
+}
+
+.margin {
+  &--top {
+    &--xs {
+      margin-top: var(--margin-half);
+    }
+    &--sm {
+      margin-top: var(--margin-base);
+    }
+    &--md {
+      margin-top: var(--margin-double);
+    }
+    &--lg {
+      margin-top: var(--margin-triple);
+    }
+  }
+  &--bottom {
+    &--xs {
+      margin-bottom: var(--margin-half);
+    }
+    &--sm {
+      margin-bottom: var(--margin-base);
+    }
+    &--md {
+      margin-bottom: var(--margin-double);
+    }
+    &--lg {
+      margin-bottom: var(--margin-triple);
+    }
+  }
+  &--left {
+    &--xs {
+      margin-left: var(--margin-half);
+    }
+    &--sm {
+     margin-left: var(--margin-base);
+    }
+    &--md {
+      margin-left: var(--margin-double);
+    }
+    &--lg {
+      margin-left: var(--margin-triple);
+    }
+  }
+  &--right {
+    &--xs {
+      margin-right: var(--margin-half);
+    }
+    &--sm {
+     margin-right: var(--margin-base);
+    }
+    &--md {
+      margin-right: var(--margin-double);
+    }
+    &--lg {
+      margin-right: var(--margin-triple);
     }
   }
 }
