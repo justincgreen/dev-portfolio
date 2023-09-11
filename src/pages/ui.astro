@@ -1,10 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Chip from '../components/Chip.astro';
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
 ---
 
 <Layout title="Style Guide">
   <main>
+    <div class="padding--top--md">
+      <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green">Links & Buttons</h1>
+      <div class="c-button__group">
+        <Link url="https://justingreen.dev" text="Link Text" target="_blank" />
+        <Button text="Button Text" />
+      </div>
+    </div>
+      
     <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green">Colors</h1>
     <Chip title="Green" color="green" hex="#00ff94" />
     <Chip title="Dark Green" color="green--dark" hex="#0a2b30" />
@@ -33,7 +43,7 @@ import Chip from '../components/Chip.astro';
       <div class="c-badge">Badge 1</div>
       <div class="c-badge">Badge 2</div>
       <div class="c-badge">Badge 3</div>
-    </div>
+    </div>        
   </main>
 </Layout>
 

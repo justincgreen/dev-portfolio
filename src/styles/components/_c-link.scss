@@ -1,0 +1,15 @@
+.c-link {
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 3px;
+  color: var(--c-slate--lightest);
+  padding: 10px 15px;
+  border: 1px solid var(--c-green);
+  font-size: var(--font-size--xs);
+  transition: all 0.2s ease;
+  
+  &:hover {
+    box-shadow: 4px 4px 0 0 var(--c-green);
+    transform: translate(-5px, -5px);
+  }
+}
