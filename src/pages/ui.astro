@@ -3,19 +3,25 @@ import Layout from '../layouts/Layout.astro';
 import Chip from '../components/Chip.astro';
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
+import Badge from '../components/Badge.astro';
 ---
 
 <Layout title="Style Guide">
   <main>
     <div class="padding--top--md">
-      <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green">Links & Buttons</h1>
-      <div class="c-button__group">
+      <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green">Links, Buttons, Badges</h1>
+      <div class="flex-group padding--bottom--sm">
         <Link url="https://justingreen.dev" text="Link Text" target="_blank" />
         <Button text="Button Text" />
       </div>
+      <div class="flex-group padding--bottom--sm">
+        <Badge text="Badge 1"/>
+        <Badge text="Badge 2"/>
+        <Badge text="Badge 3"/>
+      </div>  
     </div>
       
-    <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green">Colors</h1>
+    <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green--light">Colors</h1>
     <Chip title="Green" color="green" hex="#00ff94" />
     <Chip title="Dark Green" color="green--dark" hex="#0a2b30" />
     <Chip title="Darkest Green" color="green--darkest" hex="#061e21" />
@@ -28,7 +34,7 @@ import Link from '../components/Link.astro';
       
     <hr />
     
-    <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green">Headings</h1>
+    <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green--lightest">Headings</h1>
     <h1 class="padding--top--sm padding--bottom--sm">(H1) Heading 1</h1>
     <h2 class="padding--top--sm padding--bottom--sm">(H2) Heading 2</h2>
     <h3 class="padding--top--sm padding--bottom--sm">(H3) Heading 3</h3>
@@ -37,13 +43,7 @@ import Link from '../components/Link.astro';
     <h6 class="padding--top--sm padding--bottom--sm">(H6) Heading 6</h6>
     
     <hr />
-    <p class="padding--bottom--sm">Paragraph text</p>
-    
-    <div class="c-badge__group padding--bottom--sm">
-      <div class="c-badge">Badge 1</div>
-      <div class="c-badge">Badge 2</div>
-      <div class="c-badge">Badge 3</div>
-    </div>        
+    <p class="padding--bottom--sm">Paragraph text</p>              
   </main>
 </Layout>
 
@@ -51,18 +51,5 @@ import Link from '../components/Link.astro';
   main {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .c-badge {
-    display: inline-flex;
-    padding: 10px 15px;
-    border-radius: 20px;
-    background-color: var(--c-green--darkest);
-    font-size: var(--font-size--xs);
-    
-    &__group {
-      display: flex;
-      gap: 10px;
-    }
-  }
+  }  
 </style>

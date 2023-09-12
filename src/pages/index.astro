@@ -3,8 +3,15 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Justin Green</h1>
-    <p>Some More Text Here</p>
+	<main class="padding--top--lg">
+		<h1 class="font-color--green font-size--jumbo">Justin Green</h1>
+    <h2>Front-End Developer</h2>
 	</main>
 </Layout>
+
+<style lang="scss">
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+</style>

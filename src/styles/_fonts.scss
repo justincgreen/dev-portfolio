@@ -29,4 +29,12 @@
 
 .font-color--green {
   color: var(--c-green);
+  
+  &--light {
+    color: var(--c-green--light);
+  }
+  
+  &--lightest {
+    color: var(--c-green--lightest);
+  }
 }

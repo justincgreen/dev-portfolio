@@ -1,4 +1,9 @@
 // Spacing 
+.flex-group {
+  display: flex;
+  gap: 10px;  
+}
+
 .padding {
   &--top {
     &--xs {
