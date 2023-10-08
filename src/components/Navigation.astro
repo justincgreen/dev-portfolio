@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets';
+import github from "../images/github.svg";
+const {text} = Astro.props;
+---
+
+<nav class="c-navigation">
+  <h3>Justin Green</h3>
+  <a href="#" class="c-navigation__link">About</a>
+  <a href="#" class="c-navigation__link">Projects</a>
+  <a href="https://github.com/justincgreen" target="_blank">
+    <Image src={github} alt="GitHub" width="40px" height="40px" />
+  </a>
+</nav>

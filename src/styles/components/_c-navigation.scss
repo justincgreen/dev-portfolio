@@ -1,0 +1,18 @@
+// Navigation
+.c-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 80%;
+  padding: 15px 30px;
+  margin: 20px auto 0 auto;
+  border-radius: 40px;
+  background: rgb(255 255 255 / 5%);
+  border: 1px solid rgb(255 255 255 / 10%);
+  backdrop-filter: blur(6px);
+  
+  &__link {
+    color: var(--c-white);
+  }
+}

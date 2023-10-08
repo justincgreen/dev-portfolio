@@ -1,7 +1,9 @@
 body {
   min-height: 100vh;
   background-color: var(--c-green--dark); // fallback
-  // background: linear-gradient(-45deg, var(--c-green--dark), var(--c-green--darkest));
+  background: linear-gradient(to bottom right, var(--c-green--mid), var(--c-green--darkest));
+  // background: radial-gradient(var(--c-green--mid), var(--c-green--darkest));
+  // background: linear-gradient(-45deg, var(--c-green--mid), var(--c-green--darkest));
   // background-size: 400% 400%;
   // background-repeat: no-repeat;
   // animation: gradient 15s ease infinite;
