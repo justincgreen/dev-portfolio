@@ -4,11 +4,10 @@ import Chip from '../components/Chip.astro';
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import Badge from '../components/Badge.astro';
-import { fade } from 'astro:transitions';
 ---
 
 <Layout title="Style Guide">
-  <main transition:animate={fade({ duration: '0.5s' })}>
+  <main class="fade-up">
     <div class="padding--top--md">
       <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green">Links, Buttons, Badges</h1>
       <div class="flex-group padding--bottom--sm">
