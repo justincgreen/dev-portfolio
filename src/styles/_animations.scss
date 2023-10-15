@@ -9,3 +9,29 @@
     background-position: 0% 50%;
   }
 }
+
+@keyframes fade-up {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-up {
+  transform: translateY(40px);
+  opacity: 0;
+  animation: fade-up 0.7s ease forwards;
+}
+
+.is-hidden-page-load {
+  opacity: 0;
+  transform: scale(0.5);
+  // transform: translateY(100px);
+  transition: all 0.5s ease;
+}
+
+.has-fade {
+  opacity: 1;
+  transform: scale(1);
+  // transform: translateY(0);
+}

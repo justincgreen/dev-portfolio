@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { fade } from 'astro:transitions';
+---
+
+<Layout title="Justin Green | Developer">
+  <main class="margin--top--lg">
+    <!-- <h1 class="font-size--jumbo">Hello I'm Justin</h1> -->
+    
+    <div class="container container--lg">
+      <div transition:animate={fade({ duration: '0.5s' })}>
+        <h1 class="font-color--green font-size--jumbo">Projects Page</h1>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style lang="scss">
+
+</style>

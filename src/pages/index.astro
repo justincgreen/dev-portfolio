@@ -1,16 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
+// import { fade } from 'astro:transitions';
 ---
 
 <Layout title="Justin Green | Developer">
-	<main class="margin--top--lg">
-    <!-- <h1 class="font-size--jumbo">Hello I'm Justin</h1> -->
-    
+	<main class="margin--top--lg">      
     <div class="container container--lg">
-      <div class="c-grid-block">
-        <div class="c-grid-block__item">About Me</div>
-        <div class="c-grid-block__item">Projects</div>
-        <div class="c-grid-block__item">Resume</div>
+      <!-- <div transition:animate={fade({ duration: '0.5s' })}> -->
+      <div class="fade-up">
+        <h1 class="font-color--green font-size--jumbo">Home Page</h1>
+        
+        <div class="c-grid-block">
+          <div class="c-grid-block__item">About Me</div>
+          <div class="c-grid-block__item">Projects</div>
+          <div class="c-grid-block__item">Resume</div>
+        </div>
       </div>
     </div>
     
@@ -19,6 +23,14 @@ import Layout from '../layouts/Layout.astro';
     <h2>Front-End Developer</h2> -->
 	</main>
 </Layout>
+
+<!-- <script>
+  const loadContent = document.querySelector('.is-hidden-page-load');
+  
+  setTimeout(() => {
+    loadContent.classList.add('has-fade');
+  }, 100);
+</script> -->
 
 <style lang="scss">
   .c-grid-block {
