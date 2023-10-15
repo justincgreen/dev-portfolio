@@ -1,7 +1,7 @@
 // General Variables
 
 // Primary Font
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400&family=Roboto+Mono:wght@100;200;400&display=swap');
 
 // Colors 
 :root {
@@ -23,6 +23,7 @@
 :root {
   --font-family-body: "Montserrat", sans-serif;
   --font-family-primary: "Montserrat", sans-serif;
+  --font-family-secondary: "Roboto Mono", monospace;
   --font-size--xxs: 0.8em;
   --font-size--xs: 1.2em;
   --font-size--sm: 1.5em;
@@ -35,12 +36,13 @@
 
 // Spacing 
 :root {
-  --padding-base: 20px;
-  --padding-half: calc(var(--padding-base) - 10px);
-  --padding-double: calc(var(--padding-base) * 2);
-  --padding-triple: calc(var(--padding-base) * 3);
-  --margin-base: 20px;
-  --margin-half: calc(var(--margin-base) - 10);
-  --margin-double: calc(var(--margin-base) * 2);
-  --margin-triple: calc(var(--margin-base) * 3);
+  --space: 20px;
+  --space-half: calc(var(--space) - 10px);
+  --space-double: calc(var(--space) * 2);
+  --space-triple: calc(var(--space) * 3);
+}
+
+// Transition
+:root {
+  --transition-all: all 0.2s ease;
 }
