@@ -8,48 +8,47 @@ import Badge from '../components/Badge.astro';
 
 <Layout title="Style Guide">
   <main class="fade-up">
-    <div class="padding--top--md">
-      <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green">Links, Buttons, Badges</h1>
-      <div class="flex-group padding--bottom--sm">
-        <Link url="https://justingreen.dev" text="Link Text" target="_blank" />
-        <Button text="Button Text" />
+    <div class="l-container l-container--lg">
+      <div class="padding--top--md">
+        <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green">Links, Buttons, Badges</h1>
+        <div class="flex-group padding--bottom--sm">
+          <Link url="https://justingreen.dev" text="Link Text" target="_blank" />
+          <Button text="Button Text" />
+        </div>
+        <div class="flex-group padding--bottom--sm">
+          <Badge text="Badge 1"/>
+          <Badge text="Badge 2"/>
+          <Badge text="Badge 3"/>
+        </div>  
       </div>
-      <div class="flex-group padding--bottom--sm">
-        <Badge text="Badge 1"/>
-        <Badge text="Badge 2"/>
-        <Badge text="Badge 3"/>
-      </div>  
-    </div>
+        
+      <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green--light">Colors</h1>
+      <Chip title="Green" color="green" hex="#00ff94" />
+      <Chip title="Dark Green" color="green--dark" hex="#0a2b30" />
+      <Chip title="Darkest Green" color="green--darkest" hex="#061e21" />
+      <Chip title="Navy" color="navy" hex="#0a192f" />
+      <Chip title="Slate" color="slate" hex="#8892b0" />
+      <Chip title="Slate Light" color="slate--light" hex="#a8b2d1" />
+      <Chip title="Slate Lightest" color="slate--lightest" hex="#ccd6f6" />
+      <Chip title="White" color="white" hex="#e6f1ff" />
+      <Chip title="No Color" />
+        
+      <hr />
       
-    <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green--light">Colors</h1>
-    <Chip title="Green" color="green" hex="#00ff94" />
-    <Chip title="Dark Green" color="green--dark" hex="#0a2b30" />
-    <Chip title="Darkest Green" color="green--darkest" hex="#061e21" />
-    <Chip title="Navy" color="navy" hex="#0a192f" />
-    <Chip title="Slate" color="slate" hex="#8892b0" />
-    <Chip title="Slate Light" color="slate--light" hex="#a8b2d1" />
-    <Chip title="Slate Lightest" color="slate--lightest" hex="#ccd6f6" />
-    <Chip title="White" color="white" hex="#e6f1ff" />
-    <Chip title="No Color" />
+      <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green--lightest">Headings</h1>
+      <h1 class="padding--top--sm padding--bottom--sm">(H1) Heading 1</h1>
+      <h2 class="padding--top--sm padding--bottom--sm">(H2) Heading 2</h2>
+      <h3 class="padding--top--sm padding--bottom--sm">(H3) Heading 3</h3>
+      <h4 class="padding--top--sm padding--bottom--sm">(H4) Heading 4</h4>
+      <h5 class="padding--top--sm padding--bottom--sm">(H5) Heading 5</h5>
+      <h6 class="padding--top--sm padding--bottom--sm">(H6) Heading 6</h6>
       
-    <hr />
-    
-    <h1 class="padding--top--sm padding--bottom--sm font-size--jumbo font-color--green--lightest">Headings</h1>
-    <h1 class="padding--top--sm padding--bottom--sm">(H1) Heading 1</h1>
-    <h2 class="padding--top--sm padding--bottom--sm">(H2) Heading 2</h2>
-    <h3 class="padding--top--sm padding--bottom--sm">(H3) Heading 3</h3>
-    <h4 class="padding--top--sm padding--bottom--sm">(H4) Heading 4</h4>
-    <h5 class="padding--top--sm padding--bottom--sm">(H5) Heading 5</h5>
-    <h6 class="padding--top--sm padding--bottom--sm">(H6) Heading 6</h6>
-    
-    <hr />
-    <p class="padding--bottom--sm">Paragraph text</p>              
+      <hr />
+      <p class="padding--bottom--sm">Paragraph text</p>  
+    </div>            
   </main>
 </Layout>
 
 <style lang="scss">
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-  }  
+
 </style>

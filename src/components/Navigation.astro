@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import github from "../images/github.svg?raw";
+import codepen from "../images/codepen.svg?raw";
 import headshot from "../images/headshot.jpg";
 const {text} = Astro.props;
 ---
@@ -20,6 +21,9 @@ const {text} = Astro.props;
     <a class="c-navigation__link" href="/projects">Projects</a>
     <a class="c-navigation__link--social" href="https://github.com/justincgreen" target="_blank">
       <Fragment set:html={github} />
+    </a>
+    <a class="c-navigation__link--social" href="https://codepen.io/justincgreen" target="_blank">
+      <Fragment set:html={codepen} />
     </a>
   </div> 
 </nav>

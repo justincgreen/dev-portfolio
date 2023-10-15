@@ -6,7 +6,6 @@
   gap: 20px;
   width: 100%;
   padding: 5px 30px;
-  // border-radius: 40px;
   background: rgb(255 255 255 / 5%);
   border-bottom: 1px solid rgb(255 255 255 / 10%);
   backdrop-filter: blur(6px);
@@ -46,7 +45,7 @@
   &__links {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
   }
   
   &__link {
@@ -67,8 +66,12 @@
       &:hover {
         svg path {
           fill: var(--c-green);
+          
+          &.no-fill {
+            fill: transparent;
+          }
         }
-      }
+      }            
     }
   }
 }

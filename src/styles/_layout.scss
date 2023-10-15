@@ -1,8 +1,8 @@
-.container {
+.l-container {
   padding: 0 var(--space);
   margin: auto;
   
   &--lg {
-    max-width: 1200px;
+    max-width: 1000px;
   }
 }
