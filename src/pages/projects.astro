@@ -7,23 +7,26 @@ const cardArray = [
   {
    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
    url: "https://github.com/justincgreen",
-   title: "Card Title",
+   title: "Card Title 1",
    description: "Card Description",
-   badges: ["Test Badge", "Test Badge 2"]
+   badges: ["Test Badge", "Test Badge 2"],
+   badgeCount: [1,2,3] // Note: this just needs data items to render in the map function from Card.astro, the actual values are irrelevant
   },
   {
     src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
      url: "https://github.com/justincgreen",
-     title: "Card Title",
+     title: "Card Title 2",
      description: "Card Description",
-     badges: ["Test Badge"]
+     badges: ["Test Badge"],
+     badgeCount: [1,2]
   },
   {
     src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
      url: "https://github.com/justincgreen",
-     title: "Card Title",
+     title: "Card Title 3",
      description: "Card Description",
-     badges: ["Test Badge"]
+     badges: ["Test Badge"],
+     badgeCount: [1]
   }
 ];
 ---
@@ -41,7 +44,8 @@ const cardArray = [
                 url={card.url}
                 title={card.title}
                 description={card.description}
-                badges={card.badges}
+                badgeTitle={card.badges}
+                badgeCount={card.badgeCount}
               />
             ))
           }

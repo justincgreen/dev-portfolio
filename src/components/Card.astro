@@ -1,6 +1,7 @@
 ---
 import Badge from '../components/Badge.astro';
-const {src, title, description, url, badges} = Astro.props;
+const {src, title, description, url, badgeTitle, badgeCount} = Astro.props;
+const badgeArray = badgeCount;
 ---
 
 <div class="c-card">
@@ -8,6 +9,12 @@ const {src, title, description, url, badges} = Astro.props;
     <img src={src} alt={title} />
     <h3>{title}</h3>
     <p>{description}</p>
-    <Badge text={badges} />
+    {
+      (() => {        
+        return badgeArray.map(() => (
+          <Badge text={badgeTitle} /> 
+        ));        
+      })()
+    }
   </a>
 </div>
