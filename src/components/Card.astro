@@ -1,5 +1,6 @@
 ---
-const {src, title, description, url} = Astro.props;
+import Badge from '../components/Badge.astro';
+const {src, title, description, url, badges} = Astro.props;
 ---
 
 <div class="c-card">
@@ -7,5 +8,6 @@ const {src, title, description, url} = Astro.props;
     <img src={src} alt={title} />
     <h3>{title}</h3>
     <p>{description}</p>
+    <Badge text={badges} />
   </a>
 </div>

@@ -2,35 +2,49 @@
 import Layout from '../layouts/Layout.astro';
 import CardGrid from '../components/CardGrid.astro';
 import Card from '../components/Card.astro';
+
+const cardArray = [
+  {
+   src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
+   url: "https://github.com/justincgreen",
+   title: "Card Title",
+   description: "Card Description",
+   badges: ["Test Badge", "Test Badge 2"]
+  },
+  {
+    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
+     url: "https://github.com/justincgreen",
+     title: "Card Title",
+     description: "Card Description",
+     badges: ["Test Badge"]
+  },
+  {
+    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
+     url: "https://github.com/justincgreen",
+     title: "Card Title",
+     description: "Card Description",
+     badges: ["Test Badge"]
+  }
+];
 ---
 
 <Layout title="Justin Green | Developer">
   <main class="u-margin--top--lg">    
     <div class="l-container l-container--lg">
       <div class="u-fade-up">
-        <h1 class="font-color--green font-size--jumbo u-text--center u-padding--bottom--md">Projects</h1>
-        
+        <h1 class="font-color--green font-size--jumbo u-text--center u-padding--bottom--md">Projects</h1>                        
         <CardGrid>
-          <Card 
-            src="https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA"
-            url="https://github.com/justincgreen"
-            title="Card Title"
-            description="Card Description"
-          />
-          
-          <Card 
-            src="https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA"
-            url="https://github.com/justincgreen"
-            title="Card Title"
-            description="Card Description"
-          />
-          
-          <Card 
-            src="https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA"
-            url="https://github.com/justincgreen"
-            title="Card Title"
-            description="Card Description"
-          />
+          {
+            cardArray.map((card) => (
+              <Card
+                src={card.src}
+                url={card.url}
+                title={card.title}
+                description={card.description}
+                badges={card.badges}
+              />
+            ))
+          }
         </CardGrid>
       </div>
     </div>

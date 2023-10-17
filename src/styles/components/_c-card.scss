@@ -1,5 +1,11 @@
-.c-card {
+.c-card {  
   &__link {
+    display: grid;
+    gap: 10px;
     color: var(--c-white);
+    background: rgb(255 255 255 / 5%);
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 10px;
+    padding: var(--space);
   }
 }
