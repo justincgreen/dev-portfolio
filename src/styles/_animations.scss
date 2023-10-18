@@ -24,3 +24,13 @@
   opacity: 0;
   animation: fade-up 0.7s ease forwards;
 }
+
+.u-animation-delay {
+  @media(min-width: 768px) {
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.25}s;
+      }
+    }
+  }
+}

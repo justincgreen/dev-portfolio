@@ -4,17 +4,19 @@ const {src, title, description, url, badgeTitle, badgeCount} = Astro.props;
 const badgeArray = badgeCount;
 ---
 
-<div class="c-card">
+<div class="c-card u-fade-up u-animation-delay">
   <a class="c-card__link" href={url} target="_blank">
     <img src={src} alt={title} />
     <h3>{title}</h3>
     <p>{description}</p>
-    {
-      (() => {        
-        return badgeArray.map(() => (
-          <Badge text={badgeTitle} /> 
-        ));        
-      })()
-    }
+    <div class="c-card__badge-group">
+      {
+        (() => {        
+          return badgeArray.map(() => (
+            <Badge text={badgeTitle} /> 
+          ));        
+        })()
+      }
+    </div>
   </a>
 </div>
