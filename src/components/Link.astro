@@ -2,4 +2,6 @@
 const {text,url,target} = Astro.props;
 ---
 
-<a href={url} target={target} class="c-link">{text}</a>
+{
+  url ? <a href={url} target={target} class="c-link">{text}</a> : <div class="c-link">{text}</div>
+}
