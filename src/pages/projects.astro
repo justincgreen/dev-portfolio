@@ -2,31 +2,30 @@
 import Layout from '../layouts/Layout.astro';
 import CardGrid from '../components/CardGrid.astro';
 import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import Button from '../components/Button.astro';
 
 const cardArray = [
   {
    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
    url: "https://github.com/justincgreen",
    title: "Rapid",
-   description: "Card Description",
-   badges: ["Proof of Concept", "React"],
-   badgeCount: [1,2,3] // Note: this just needs data items to render in the map function from Card.astro, the actual values are irrelevant
+   description: "Card Description", 
+   badgeMeta: [{label: "Proof of Concept"}, {label: "React"}] 
   },
   {
     src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
      url: "https://github.com/justincgreen",
      title: "Coin Pouch",
-     description: "Card Description",
-     badges: ["Next", "React"],
-     badgeCount: [1,2]
+     description: "Card Description",     
+     badgeMeta: [{label: "Next"}, {label: "React"}] 
   },
   {
     src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
      url: "https://github.com/justincgreen",
      title: "Card Title 3",
      description: "Card Description",
-     badges: ["Astro"],
-     badgeCount: [1]
+     badgeMeta: [{label: "React"}]
   }
 ];
 ---
@@ -44,9 +43,22 @@ const cardArray = [
                 url={card.url}
                 title={card.title}
                 description={card.description}
-                badgeTitle={card.badges}
-                badgeCount={card.badgeCount}
-              />
+              >
+                
+                <div class="c-card__badge-group">
+                  {
+                    (() => {        
+                      return card.badgeMeta.map((item) => (
+                        <Badge>
+                          {item.label}
+                        </Badge> 
+                      ));        
+                    })()
+                  }
+                </div>
+                
+                <Button text="Learn More" />
+              </Card>
             ))
           }
         </CardGrid>

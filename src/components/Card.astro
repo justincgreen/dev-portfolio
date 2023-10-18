@@ -1,24 +1,12 @@
 ---
-import Badge from '../components/Badge.astro';
-import Button from '../components/Button.astro';
-const {src, title, description, url, badgeTitle, badgeCount, cardLinkTitle} = Astro.props;
-const badgeArray = badgeCount;
+const {src, title, description, url} = Astro.props;
 ---
 
 <div class="c-card u-fade-up u-animation-delay">
   <a class="c-card__link" href={url} target="_blank">
     <img src={src} alt={title} />
     <h3>{title}</h3>
-    <p>{description}</p>
-    <Button text="Learn More" />
-    <div class="c-card__badge-group">
-      {
-        (() => {        
-          return badgeArray.map(() => (
-            <Badge text={badgeTitle} /> 
-          ));        
-        })()
-      }
-    </div>
+    <p>{description}</p>    
+    <slot/>
   </a>
 </div>
