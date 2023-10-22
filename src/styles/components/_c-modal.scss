@@ -1,0 +1,28 @@
+.c-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255 255 255 / 5%);
+  backdrop-filter: blur(30px);
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  z-index: 200;
+  
+  &.is-active {
+    visibility: visible;
+    opacity: 1;
+    
+    .c-modal__card {
+      opacity: 1;
+    }
+  }
+  
+  &__card{
+    padding: var(--space-triple);
+    background-color: var(--c-slate);
+    border-radius: 10px;
+  }
+}

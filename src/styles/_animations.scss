@@ -18,6 +18,22 @@
   }
 }
 
+@keyframes scalein {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.u-scale {
+  animation: scalein 0.5s ease forwards;
+}
+
 .u-fade-up {
   // transform: scale(0.9);
   transform: translateY(40px);
