@@ -70,19 +70,34 @@ const cardArray = [
   </main>
 </Layout>
 
-<script>
-  const cards = document.querySelectorAll('.c-card');
-  const modal = document.querySelector('.c-modal');;
-  const modalCard = document.querySelector('.c-modal__card');;
-  
-  cards.forEach((card) => {
-    card.addEventListener('click', () => {
-      modal.classList.toggle('is-active');
-      modalCard.classList.toggle('u-scale');
+<script is:inline> 
+  if(document.querySelectorAll('.c-card')) {
+    const cards = document.querySelectorAll('.c-card');
+    const modal = document.querySelector('.c-modal');
+    const modalCard = document.querySelector('.c-modal .card');   
+    
+    cards.forEach((card) => {
+      card.addEventListener('click', () => {
+        modalCard.classList.remove('u-scaleout');
+        modal.classList.add('is-active');
+        modalCard.classList.add('u-scale');
+        document.body.classList.add('is-disabled');
+      });
     });
-  });
+  }
+  
+  if(document.querySelector('.c-modal .card-close')) {
+    const modal = document.querySelector('.c-modal');
+    const modalCard = document.querySelector('.c-modal .card');   
+    const modalCardClose = document.querySelector('.c-modal .card-close');
+    
+    modalCardClose.addEventListener('click', () => {
+      document.body.classList.remove('is-disabled');
+      modalCard.classList.remove('u-scale');
+      modalCard.classList.add('u-scaleout');
+      setTimeout(() => {
+        modal.classList.remove('is-active');
+      },100);      
+    });
+  }
 </script>
-
-<style lang="scss">
-
-</style>

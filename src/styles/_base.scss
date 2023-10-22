@@ -9,6 +9,10 @@ body {
   // animation: gradient 15s ease infinite;
   color: var(--c-slate--lightest);
   font-family: var(--font-family-body);
+  
+  &.is-disabled {
+    overflow: hidden;
+  }
 }
 
 p {
