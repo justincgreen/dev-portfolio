@@ -23,10 +23,31 @@ const cardArray = [
   },
   {
     src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
-     url: "https://github.com/justincgreen",
-     title: "Card Title 3",
-     description: "Card Description",
-     badgeMeta: [{label: "React"}]
+     url: "https://budget-tracker-2-next.vercel.app/",
+     title: "Budget Tracker",
+     description: "Budget tool",
+     badgeMeta: [{label: "Next"}, {label: "React"}]
+  },
+  {
+    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
+     url: "https://www.chainalysis.com/",
+     title: "Chainalysis",
+     description: "Marketing Site",
+     badgeMeta: [{label: "Wordpress"}, {label: "React"}]
+  },
+  {
+    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
+     url: "https://gpo.com/",
+     title: "GPO",
+     description: "Marketing Site",
+     badgeMeta: [{label: "Wordpress"}]
+  },
+  {
+    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
+     url: "https://states-united.netlify.app/components/detail/home.html",
+     title: "States United",
+     description: "Component Library",
+     badgeMeta: [{label: "Fractal"}, {label: "Twig"}]
   }
 ];
 ---
@@ -35,34 +56,36 @@ const cardArray = [
   <main class="u-margin--top--lg">    
     <div class="l-container l-container--lg">
       <div class="u-fade-up">
-        <h1 class="font-color--green font-size--jumbo u-text--center u-padding--bottom--md">Projects</h1>                        
-        <CardGrid>
-          {
-            cardArray.map((card) => (
-              <Card
-                src={card.src}
-                /*url={card.url}*/
-                title={card.title}
-                description={card.description}
-              >
-                
-                <div class="c-card__badge-group">
-                  {
-                    (() => {        
-                      return card.badgeMeta.map((item) => (
-                        <Badge>
-                          {item.label}
-                        </Badge> 
-                      ));        
-                    })()
-                  }
-                </div>
-                
-                <!-- <Button text="Learn More" /> -->
-              </Card>
-            ))
-          }
-        </CardGrid>
+        <h1 class="font-color--green font-size--jumbo u-text--center u-padding--bottom--md">Projects</h1>           
+        <div class="u-margin--bottom--lg">             
+          <CardGrid>
+            {
+              cardArray.map((card) => (
+                <Card
+                  src={card.src}
+                  /*url={card.url}*/
+                  title={card.title}
+                  description={card.description}
+                >
+                  
+                  <div class="c-card__badge-group">
+                    {
+                      (() => {        
+                        return card.badgeMeta.map((item) => (
+                          <Badge>
+                            {item.label}
+                          </Badge> 
+                        ));        
+                      })()
+                    }
+                  </div>
+                  
+                  <!-- <Button text="Learn More" /> -->
+                </Card>
+              ))
+            }
+          </CardGrid>
+        </div>
       </div>
     </div>
     
