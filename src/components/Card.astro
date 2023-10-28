@@ -9,9 +9,9 @@ const {src, title, description, url} = Astro.props;
     <p>{description}</p>    
     <slot/>
   </a> -->
-  <div class="c-card__link">
+  <div class="c-card__info" data-card-url={url}>
     <img src={src} alt={title} />
-    <h4>{title}</h4>
+    <h4 class="c-card__title">{title}</h4>
     <p>{description}</p>
     <slot/>
   </div>

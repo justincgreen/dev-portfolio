@@ -63,9 +63,9 @@ const cardArray = [
               cardArray.map((card) => (
                 <Card
                   src={card.src}
-                  /*url={card.url}*/
                   title={card.title}
                   description={card.description}
+                  url={card.url}
                 >
                   
                   <div class="c-card__badge-group">
@@ -78,9 +78,7 @@ const cardArray = [
                         ));        
                       })()
                     }
-                  </div>
-                  
-                  <!-- <Button text="Learn More" /> -->
+                  </div>                  
                 </Card>
               ))
             }
@@ -101,10 +99,16 @@ const cardArray = [
     
     cards.forEach((card) => {
       card.addEventListener('click', () => {
+        const modalProjectLink = modal.querySelector('.c-modal__project-link');
+        const projectTitle = modal.querySelector('.c-modal__project-title');
+        const projectUrl = card.querySelector('.c-card__info').getAttribute('data-card-url');
+        
         modalCard.classList.remove('u-scaleout');
         modal.classList.add('is-active');
         modalCard.classList.add('u-scale');
         document.body.classList.add('is-disabled');
+        projectTitle.innerText = card.querySelector('.c-card__title').innerText;
+        modalProjectLink.href = projectUrl;
       });
     });
   }
