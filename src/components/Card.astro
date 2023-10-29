@@ -10,7 +10,9 @@ const {src, title, description, url, details} = Astro.props;
     <slot/>
   </a> -->
   <div class="c-card__info" data-card-url={url}>
-    <img src={src} alt={title} />
+    <div class="c-card__image">
+      <img src={src} alt={title} />
+    </div>
     <h4 class="c-card__title">{title}</h4>
     <p>{description}</p>
     <p class="c-card__details is-hidden">{details}</p>
