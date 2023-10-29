@@ -1,5 +1,5 @@
 ---
-const {src, title, description, url} = Astro.props;
+const {src, title, description, url, details} = Astro.props;
 ---
 
 <div class="c-card u-fade-up u-animation-delay">
@@ -13,6 +13,7 @@ const {src, title, description, url} = Astro.props;
     <img src={src} alt={title} />
     <h4 class="c-card__title">{title}</h4>
     <p>{description}</p>
+    <p class="c-card__details is-hidden">{details}</p>
     <slot/>
   </div>
 </div>

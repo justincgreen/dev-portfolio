@@ -25,6 +25,7 @@ import ProjectsData from '../data/ProjectsData.json';
                   title={card.title}
                   description={card.description}
                   url={card.url}
+                  details={card.details}
                 >
                   
                   <div class="c-card__badge-group">
@@ -59,15 +60,19 @@ import ProjectsData from '../data/ProjectsData.json';
     cards.forEach((card) => {
       card.addEventListener('click', () => {
         const modalProjectLink = modal.querySelector('.c-modal__project-link');
-        const projectTitle = modal.querySelector('.c-modal__project-title');
+        const modalProjectDetails = modal.querySelector('.c-modal__project-details');
+        const modalTitle = modal.querySelector('.c-modal__project-title');
+        const projectTitle = card.querySelector('.c-card__title');
         const projectUrl = card.querySelector('.c-card__info').getAttribute('data-card-url');
+        const projectDetails = card.querySelector('.c-card__details');
         
+        document.body.classList.add('is-disabled');
         modalCard.classList.remove('u-scaleout');
         modal.classList.add('is-active');
-        modalCard.classList.add('u-scale');
-        document.body.classList.add('is-disabled');
-        projectTitle.innerText = card.querySelector('.c-card__title').innerText;
+        modalCard.classList.add('u-scale');        
+        modalTitle.innerText = projectTitle.innerText;
         modalProjectLink.href = projectUrl;
+        modalProjectDetails.innerText = projectDetails.innerText;
       });
     });
   }

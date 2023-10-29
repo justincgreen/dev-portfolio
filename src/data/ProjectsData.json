@@ -4,41 +4,47 @@
    "url": "https://rapid-two.vercel.app/",
    "title": "Rapid",
    "description": "Prototype UI Builder", 
-   "badgeMeta": [{"label": "Proof of Concept"}, {"label": "React"}] 
+   "badgeMeta": [{"label": "Proof of Concept"}, {"label": "React"}],
+   "details": "Rapid project details" 
   },
   {
     "src": "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
      "url": "https://coin-pouch.vercel.app/",
      "title": "Coin Pouch",
      "description": "Cryptocurrency market data",     
-     "badgeMeta": [{"label": "React"}] 
+     "badgeMeta": [{"label": "React"}],
+     "details": "Coin Pouch project details"
   },
   {
     "src": "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
      "url": "https://budget-tracker-2-next.vercel.app/",
      "title": "Budget Tracker",
      "description": "Budget tool",
-     "badgeMeta": [{"label": "Next"}, {"label": "React"}]
+     "badgeMeta": [{"label": "Next"}, {"label": "React"}],
+     "details": "Budget Tracker project details"
   },
   {
     "src": "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
      "url": "https://www.chainalysis.com/",
      "title": "Chainalysis",
      "description": "Marketing Site",
-     "badgeMeta": [{"label": "Wordpress"}, {"label": "React"}]
+     "badgeMeta": [{"label": "Wordpress"}, {"label": "React"}],
+     "details": "Chainalysis project details"
   },
   {
     "src": "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
      "url": "https://gpo.com/",
      "title": "GPO",
      "description": "Marketing Site",
-     "badgeMeta": [{"label": "Wordpress"}]
+     "badgeMeta": [{"label": "Wordpress"}],
+     "details": "GPO project details"
   },
   {
     "src": "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
      "url": "https://states-united.netlify.app/components/detail/home.html",
      "title": "States United",
      "description": "Component Library",
-     "badgeMeta": [{"label": "Fractal"}, {"label": "Twig"}]
+     "badgeMeta": [{"label": "Fractal"}, {"label": "Twig"}],
+     "details": "States United project details"
   }
 ]
