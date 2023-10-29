@@ -1,4 +1,5 @@
 ---
+// Components
 import Layout from '../layouts/Layout.astro';
 import CardGrid from '../components/CardGrid.astro';
 import Card from '../components/Card.astro';
@@ -6,50 +7,8 @@ import Badge from '../components/Badge.astro';
 // import Button from '../components/Button.astro';
 import Modal from '../components/Modal.astro';
 
-const cardArray = [
-  {
-   src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
-   url: "https://rapid-two.vercel.app/",
-   title: "Rapid",
-   description: "Prototype UI Builder", 
-   badgeMeta: [{label: "Proof of Concept"}, {label: "React"}] 
-  },
-  {
-    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
-     url: "https://coin-pouch.vercel.app/",
-     title: "Coin Pouch",
-     description: "Cryptocurrency market data",     
-     badgeMeta: [{label: "React"}] 
-  },
-  {
-    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
-     url: "https://budget-tracker-2-next.vercel.app/",
-     title: "Budget Tracker",
-     description: "Budget tool",
-     badgeMeta: [{label: "Next"}, {label: "React"}]
-  },
-  {
-    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
-     url: "https://www.chainalysis.com/",
-     title: "Chainalysis",
-     description: "Marketing Site",
-     badgeMeta: [{label: "Wordpress"}, {label: "React"}]
-  },
-  {
-    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
-     url: "https://gpo.com/",
-     title: "GPO",
-     description: "Marketing Site",
-     badgeMeta: [{label: "Wordpress"}]
-  },
-  {
-    src: "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
-     url: "https://states-united.netlify.app/components/detail/home.html",
-     title: "States United",
-     description: "Component Library",
-     badgeMeta: [{label: "Fractal"}, {label: "Twig"}]
-  }
-];
+// Data
+import ProjectsData from '../data/ProjectsData.json';
 ---
 
 <Layout title="Justin Green | Developer">
@@ -60,7 +19,7 @@ const cardArray = [
         <div class="u-margin--bottom--lg">             
           <CardGrid>
             {
-              cardArray.map((card) => (
+              ProjectsData.map((card) => (
                 <Card
                   src={card.src}
                   title={card.title}
