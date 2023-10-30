@@ -34,12 +34,19 @@
   
   .card-close {
     cursor: pointer;
-  }
-  
-  &__project-meta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: var(--c-red);
+    color: var(--c-slate--light);
+    transition: var(--transition-all);
+    
+    &:hover {
+      background-color: var(--c-red--dark);
+      transform: scale(1.1);
+    }
   }
   
   &__grid {

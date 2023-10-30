@@ -1,6 +1,6 @@
 [
   {
-   "src": "/src/images/rapid-resized-2.jpg",
+   "src": "/src/images/thumbnails/rapid-thumbnail.jpg",
    "url": "https://rapid-two.vercel.app/",
    "title": "Rapid",
    "description": "Prototype UI Builder", 
@@ -8,7 +8,7 @@
    "details": "Rapid project details" 
   },
   {
-    "src": "/src/images/coin-pouch-thumbnail.jpg",
+    "src": "/src/images/thumbnails/coin-pouch-thumbnail.jpg",
      "url": "https://coin-pouch.vercel.app/",
      "title": "Coin Pouch",
      "description": "Cryptocurrency market data",     
@@ -16,7 +16,7 @@
      "details": "Coin Pouch project details"
   },
   {
-    "src": "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
+    "src": "/src/images/thumbnails/budget-tracker-thumbnail.jpg",
      "url": "https://budget-tracker-2-next.vercel.app/",
      "title": "Budget Tracker",
      "description": "Budget tool",
@@ -24,7 +24,7 @@
      "details": "Budget Tracker project details"
   },
   {
-    "src": "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
+    "src": "/src/images/thumbnails/chainalysis-thumbnail.jpg",
      "url": "https://www.chainalysis.com/",
      "title": "Chainalysis",
      "description": "Marketing Site",
@@ -32,7 +32,7 @@
      "details": "Chainalysis project details"
   },
   {
-    "src": "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
+    "src": "/src/images/thumbnails/gpo-thumbnail.jpg",
      "url": "https://gpo.com/",
      "title": "GPO",
      "description": "Marketing Site",
@@ -40,7 +40,7 @@
      "details": "GPO project details"
   },
   {
-    "src": "https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA",
+    "src": "/src/images/thumbnails/states-united-thumbnail.jpg",
      "url": "https://states-united.netlify.app/components/detail/home.html",
      "title": "States United",
      "description": "Component Library",
