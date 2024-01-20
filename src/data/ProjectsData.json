@@ -8,7 +8,7 @@
    "details": "Rapid project details" 
   },
   {
-   "src": "/src/images/thumbnails/rapid-thumbnail.jpg",
+   "src": "/src/images/thumbnails/npt-thumbnail.jpg",
    "url": "https://national-parks-tracker.vercel.app/",
    "title": "National Parks Tracker",
    "description": "API Integration", 
