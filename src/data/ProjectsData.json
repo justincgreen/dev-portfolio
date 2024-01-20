@@ -8,6 +8,14 @@
    "details": "Rapid project details" 
   },
   {
+   "src": "/src/images/thumbnails/rapid-thumbnail.jpg",
+   "url": "https://national-parks-tracker.vercel.app/",
+   "title": "National Parks Tracker",
+   "description": "API Integration", 
+   "badgeMeta": [{"label": "Next"}, {"label": "React"}],
+   "details": "National Park Tracker project details" 
+  },
+  {
     "src": "/src/images/thumbnails/coin-pouch-thumbnail.jpg",
      "url": "https://coin-pouch.vercel.app/",
      "title": "Coin Pouch",
