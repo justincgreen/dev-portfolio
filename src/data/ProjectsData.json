@@ -5,7 +5,8 @@
    "title": "Rapid",
    "description": "Prototype UI Builder", 
    "badgeMeta": [{"label": "Proof of Concept"}, {"label": "React"}],
-   "details": "Rapid project details" 
+   "details": "Rapid started out as a concept to create an application that allowed you to build web site components in real time using a GUI (Graphical User Interface). The current state of the application is a proof of concept, it contains 3 starting components with a variety of options to customize each component.",
+   "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}] 
   },
   {
    "src": "/src/images/thumbnails/npt-thumbnail.jpg",
@@ -13,7 +14,8 @@
    "title": "National Parks Tracker",
    "description": "API Integration", 
    "badgeMeta": [{"label": "Next"}, {"label": "React"}],
-   "details": "National Park Tracker project details" 
+   "details": "National Park Tracker project details",
+   "toolsUsed": [{"tool": "Next"}, {"tool": "React"}, {"tool": "National Parks API"}]
   },
   {
     "src": "/src/images/thumbnails/coin-pouch-thumbnail.jpg",
@@ -21,7 +23,8 @@
      "title": "Coin Pouch",
      "description": "Cryptocurrency market data",     
      "badgeMeta": [{"label": "React"}],
-     "details": "Coin Pouch project details"
+     "details": "Coin Pouch project details",
+     "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}]
   },
   {
     "src": "/src/images/thumbnails/budget-tracker-thumbnail.jpg",
@@ -29,7 +32,8 @@
      "title": "Budget Tracker",
      "description": "Budget tool",
      "badgeMeta": [{"label": "Next"}, {"label": "React"}],
-     "details": "Budget Tracker project details"
+     "details": "Budget Tracker project details",
+     "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}]
   },
   {
     "src": "/src/images/thumbnails/chainalysis-thumbnail.jpg",
@@ -37,7 +41,8 @@
      "title": "Chainalysis",
      "description": "Marketing Site",
      "badgeMeta": [{"label": "Wordpress"}, {"label": "React"}],
-     "details": "Chainalysis project details"
+     "details": "Chainalysis project details",
+     "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}]
   },
   {
     "src": "/src/images/thumbnails/gpo-thumbnail.jpg",
@@ -45,7 +50,8 @@
      "title": "GPO",
      "description": "Marketing Site",
      "badgeMeta": [{"label": "Wordpress"}],
-     "details": "GPO project details"
+     "details": "GPO project details",
+     "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}]
   },
   {
     "src": "/src/images/thumbnails/states-united-thumbnail.jpg",
@@ -53,6 +59,7 @@
      "title": "States United",
      "description": "Component Library",
      "badgeMeta": [{"label": "Fractal"}, {"label": "Twig"}],
-     "details": "States United project details"
+     "details": "States United project details",
+     "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}]
   }
 ]

@@ -38,7 +38,17 @@ import ProjectsData from '../data/ProjectsData.json';
                         ));        
                       })()
                     }
-                  </div>                  
+                  </div>
+                  
+                  <div class="c-card__tools is-hidden">
+                    {
+                      (() => {        
+                        return card.toolsUsed.map((item) => (
+                          <Badge>{item.tool}</Badge>
+                        ))      
+                      })()
+                    }
+                  </div>                   
                 </Card>
               ))
             }
@@ -61,11 +71,13 @@ import ProjectsData from '../data/ProjectsData.json';
       card.addEventListener('click', () => {
         const modalProjectLink = modal.querySelector('.c-modal__project-link');
         const modalProjectDetails = modal.querySelector('.c-modal__project-details');
+        const modalProjectTools = modal.querySelector('.c-modal__project-tools');
         const modalProjectImage = modal.querySelector('.c-modal__project-image img');
         const modalTitle = modal.querySelector('.c-modal__project-title');
         const projectTitle = card.querySelector('.c-card__title');
         const projectUrl = card.querySelector('.c-card__info').getAttribute('data-card-url');
         const projectDetails = card.querySelector('.c-card__details');
+        const projectTools = card.querySelector('.c-card__tools');
         const projectImage = card.querySelector('.c-card__image img');
         
         document.body.classList.add('is-disabled');
@@ -75,6 +87,7 @@ import ProjectsData from '../data/ProjectsData.json';
         modalTitle.innerText = projectTitle.innerText;
         modalProjectLink.href = projectUrl;
         modalProjectDetails.innerText = projectDetails.innerText;
+        modalProjectTools.innerHTML = projectTools.innerHTML;
         modalProjectImage.src = projectImage.src;
       });
     });
