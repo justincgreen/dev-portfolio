@@ -14,7 +14,7 @@
    "title": "National Parks Tracker",
    "description": "API Integration", 
    "badgeMeta": [{"label": "Next"}, {"label": "React"}],
-   "details": "National Park Tracker project details",
+   "details": "I'm an avid fan of the U.S. National Parks system and enjoy visiting the parks whenever I get the opportunity. I actually have a goal to visit all 63 parks so I came up with idea to create a site that allowed me to keep track of each National Park I've visited.",
    "toolsUsed": [{"tool": "Next"}, {"tool": "React"}, {"tool": "National Parks API"}]
   },
   {
