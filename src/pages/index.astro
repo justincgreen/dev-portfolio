@@ -1,38 +1,119 @@
 ---
+// Components
 import Layout from '../layouts/Layout.astro';
+import CardGrid from '../components/CardGrid.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+// import Button from '../components/Button.astro';
+import Modal from '../components/Modal.astro';
+
+// Data
+import ProjectsData from '../data/ProjectsData.json';
 ---
 
 <Layout title="Justin Green | Developer">
-	<main class="u-margin--top--lg">      
+  <main class="u-margin--top--lg">    
     <div class="l-container l-container--lg">
       <div class="u-fade-up">
-        <h1 class="font-color--green font-size--jumbo">Home Page</h1>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quisquam eum incidunt officiis. Sapiente repellendus adipisci sit, magni ipsa assumenda quia natus quod eligendi qui quidem cupiditate totam provident odit ad quas asperiores officia nemo amet in? Possimus dolorem maxime dolor, voluptates dignissimos ad eum a aperiam maiores ea reiciendis?</p>
+        <h1 class="font-color--green font-size--jumbo u-text--center u-padding--bottom--md">Projects</h1>           
+        <div class="u-margin--bottom--lg">             
+          <CardGrid>
+            {
+              ProjectsData.map((card) => (
+                <Card
+                  src={card.src}
+                  title={card.title}
+                  description={card.description}
+                  url={card.url}
+                  details={card.details}
+                >
+                  
+                  <div class="c-card__badge-group">
+                    {
+                      (() => {        
+                        return card.badgeMeta.map((item) => (
+                          <Badge>
+                            {item.label}
+                          </Badge> 
+                        ));        
+                      })()
+                    }
+                  </div>
+                  
+                  <div class="c-card__tools is-hidden">
+                    {
+                      (() => {        
+                        return card.toolsUsed.map((item) => (
+                          <Badge>{item.tool}</Badge>
+                        ))      
+                      })()
+                    }
+                  </div>                   
+                </Card>
+              ))
+            }
+          </CardGrid>
+        </div>
       </div>
     </div>
     
-    <!-- <h1 class="font-color--green font-size--jumbo">Projects</h1> -->
-		<!-- <h1 class="font-color--green font-size--jumbo">Justin Green</h1>
-    <h2>Front-End Developer</h2> -->
-	</main>
+    <Modal />
+  </main>
 </Layout>
 
-<style lang="scss">
-  .c-grid-block {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    
-    &__item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 300px;
-      border-radius: 20px;
-      background: rgb(255 255 255 / 5%);
-      border-bottom: 1px solid rgb(255 255 255 / 10%);
-      backdrop-filter: blur(6px);
+<script is:inline> 
+  if(document.querySelectorAll('.c-card')) {
+    const cards = document.querySelectorAll('.c-card');
+    const modal = document.querySelector('.c-modal');
+    const modalCard = document.querySelector('.c-modal .card'); 
+    var closeModal = () => {
+      document.body.classList.remove('is-disabled');
+      modalCard.classList.remove('u-scale');
+      modalCard.classList.add('u-scaleout');
+      setTimeout(() => {
+        modal.classList.remove('is-active');
+      },100);
     }
+          
+    cards.forEach((card) => {
+      card.addEventListener('click', () => {
+        const modalProjectLink = modal.querySelector('.c-modal__project-link');
+        const modalProjectDetails = modal.querySelector('.c-modal__project-details');
+        const modalProjectTools = modal.querySelector('.c-modal__project-tools');
+        const modalProjectImage = modal.querySelector('.c-modal__project-image img');
+        const modalTitle = modal.querySelector('.c-modal__project-title');
+        const projectTitle = card.querySelector('.c-card__title');
+        const projectUrl = card.querySelector('.c-card__info').getAttribute('data-card-url');
+        const projectDetails = card.querySelector('.c-card__details');
+        const projectTools = card.querySelector('.c-card__tools');
+        const projectImage = card.querySelector('.c-card__image img');
+        
+        document.body.classList.add('is-disabled');
+        modalCard.classList.remove('u-scaleout');
+        modal.classList.add('is-active');         
+        modalCard.classList.add('u-scale');        
+        modalTitle.innerText = projectTitle.innerText;
+        modalProjectLink.href = projectUrl;
+        modalProjectDetails.innerText = projectDetails.innerText;
+        modalProjectTools.innerHTML = projectTools.innerHTML;
+        modalProjectImage.src = projectImage.src;
+        // Allow users to close modal by clicking the modal element when it's active
+        document.querySelector('.c-modal.is-active').addEventListener('click', (e) => {
+          if(e.target == e.currentTarget) {
+           closeModal();
+          }          
+        });
+      });
+    });
   }
-</style>
+  
+  if(document.querySelector('.c-modal .card-close')) {
+    const modal = document.querySelector('.c-modal');
+    const modalCard = document.querySelector('.c-modal .card');   
+    const modalCardClose = document.querySelector('.c-modal .card-close');    
+    
+    modalCardClose.addEventListener('click', () => {
+     closeModal();     
+    });                   
+  }
+</script>

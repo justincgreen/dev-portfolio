@@ -5,7 +5,7 @@
    "title": "Rapid",
    "description": "Prototype UI Builder", 
    "badgeMeta": [{"label": "Proof of Concept"}, {"label": "React"}],
-   "details": "Rapid started out as a concept to create an application that allowed you to build web site components in real time using a GUI (Graphical User Interface). The current state of the application is a proof of concept, it contains 3 starting components with a variety of options to customize each component.",
+   "details": "Rapid started out as a concept to create an application that allowed you to build web components in real time using a GUI (Graphical User Interface). The current state of the application is a proof of concept, it contains 3 starting components with a variety of options to customize each component.",
    "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}] 
   },
   {
