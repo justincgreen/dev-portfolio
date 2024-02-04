@@ -23,8 +23,8 @@
      "title": "Coin Pouch",
      "description": "Cryptocurrency market data",     
      "badgeMeta": [{"label": "React"}],
-     "details": "Coin Pouch project details",
-     "toolsUsed": [{"tool": "React"}, {"tool": "Coin Gecko API"}]
+     "details": "Coin Pouch utilizes the Coin Gecko API to showcase cryptocurrency market data.",
+     "toolsUsed": [{"tool": "React"}, {"tool": "Chart.js"}, {"tool": "Coin Gecko API"}]
   },
   {
     "src": "/src/images/thumbnails/budget-tracker-thumbnail.jpg",
@@ -32,7 +32,7 @@
      "title": "Budget Tracker",
      "description": "Budgeting tool",
      "badgeMeta": [{"label": "Next"}, {"label": "React"}],
-     "details": "Budget Tracker project details",
+     "details": "A web based budget tracking application to help manage and keep track of daily transactions.",
      "toolsUsed": [{"tool": "Next"}, {"tool": "React"}]
   },
   {
@@ -41,7 +41,7 @@
      "title": "Chainalysis",
      "description": "Marketing Site",
      "badgeMeta": [{"label": "Wordpress"}, {"label": "React"}],
-     "details": "Chainalysis project details",
+     "details": "I had the opportunity to collaborate on this project for 1.5 years, in that time I audited existing issues and created solutions to mitigate bottlenecks, created several new page templates and updated key site features such as the main navigation and translation toggle. I also migrated several hundred posts & custom post types from an existing site to bring all blog posts under one site which helped reduce hosting costs.",
      "toolsUsed": [{"tool": "Wordpress"}, {"tool": "React"}]
   },
   {
