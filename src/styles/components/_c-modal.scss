@@ -22,17 +22,27 @@
     .card {
       opacity: 1;
     }
-  }
+  }    
   
   .card {
-    width: 70%;
+    width: 50%;
     padding: var(--space);
-    background-color: var(--c-slate);
+    background-color: var(--c-slate--medium);
     border-radius: 10px;
     position: relative;
     
+    @include breakpoint(xxxl){
+      width: 70%;
+    }
+    
     @include breakpoint(lg){
       width: 90%;
+    }
+    
+    &__close-wrapper {
+      position: absolute;
+      top: var(--space-half);
+      right: var(--space-half);
     }
   }
   
