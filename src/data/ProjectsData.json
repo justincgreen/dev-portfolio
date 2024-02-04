@@ -14,7 +14,7 @@
    "title": "National Parks Tracker",
    "description": "API Integration", 
    "badgeMeta": [{"label": "Next"}, {"label": "React"}],
-   "details": "I'm an avid fan of the U.S. National Parks system and enjoy visiting the parks whenever I get the opportunity. I actually have a goal to visit all 63 parks so I came up with idea to create a site that allowed me to keep track of each National Park I've visited.",
+   "details": "I'm an avid fan of the U.S. National Parks system and enjoy visiting the parks whenever I get the opportunity. I have a goal to visit all 63 parks so I came up with idea to create an application that allowed me to keep track of each National Park I've visited.",
    "toolsUsed": [{"tool": "Next"}, {"tool": "React"}, {"tool": "National Parks API"}]
   },
   {
@@ -24,16 +24,16 @@
      "description": "Cryptocurrency market data",     
      "badgeMeta": [{"label": "React"}],
      "details": "Coin Pouch project details",
-     "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}]
+     "toolsUsed": [{"tool": "React"}, {"tool": "Coin Gecko API"}]
   },
   {
     "src": "/src/images/thumbnails/budget-tracker-thumbnail.jpg",
      "url": "https://budget-tracker-2-next.vercel.app/",
      "title": "Budget Tracker",
-     "description": "Budget tool",
+     "description": "Budgeting tool",
      "badgeMeta": [{"label": "Next"}, {"label": "React"}],
      "details": "Budget Tracker project details",
-     "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}]
+     "toolsUsed": [{"tool": "Next"}, {"tool": "React"}]
   },
   {
     "src": "/src/images/thumbnails/chainalysis-thumbnail.jpg",
@@ -42,16 +42,16 @@
      "description": "Marketing Site",
      "badgeMeta": [{"label": "Wordpress"}, {"label": "React"}],
      "details": "Chainalysis project details",
-     "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}]
+     "toolsUsed": [{"tool": "Wordpress"}, {"tool": "React"}]
   },
   {
     "src": "/src/images/thumbnails/gpo-thumbnail.jpg",
      "url": "https://gpo.com/",
      "title": "GPO",
      "description": "Marketing Site",
-     "badgeMeta": [{"label": "Wordpress"}],
+     "badgeMeta": [{"label": "Wordpress"}, {"label": "Sage"}, {"label": "Twig"}],
      "details": "GPO project details",
-     "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}]
+     "toolsUsed": [{"tool": "Wordpress"}, {"tool": "Sage"}, {"tool": "Twig"}]
   },
   {
     "src": "/src/images/thumbnails/states-united-thumbnail.jpg",
@@ -60,6 +60,6 @@
      "description": "Component Library",
      "badgeMeta": [{"label": "Fractal"}, {"label": "Twig"}],
      "details": "States United project details",
-     "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}]
+     "toolsUsed": [{"tool": "Fractal"}, {"tool": "Twig"}]
   }
 ]
