@@ -1,6 +1,7 @@
 [
   {
    "src": "/src/images/thumbnails/rapid-thumbnail.jpg",
+   "gifSrc": "/src/images/gifs/rapid.gif",
    "url": "https://rapid-two.vercel.app/",
    "title": "Rapid",
    "description": "Prototype UI Builder", 
@@ -10,6 +11,7 @@
   },
   {
    "src": "/src/images/thumbnails/npt-thumbnail.jpg",
+   "gifSrc": "/src/images/gifs/npt.gif",
    "url": "https://national-parks-tracker.vercel.app/",
    "title": "National Parks Tracker",
    "description": "API Integration", 
@@ -28,6 +30,7 @@
   },
   {
     "src": "/src/images/thumbnails/budget-tracker-thumbnail.jpg",
+    "gifSrc": "/src/images/gifs/budget-tracker.gif",
      "url": "https://budget-tracker-2-next.vercel.app/",
      "title": "Budget Tracker",
      "description": "Budgeting tool",
@@ -37,6 +40,7 @@
   },
   {
     "src": "/src/images/thumbnails/chainalysis-thumbnail.jpg",
+    "gifSrc": "/src/images/gifs/chainalysis.gif",
      "url": "https://www.chainalysis.com/",
      "title": "Chainalysis",
      "description": "Marketing Site",
@@ -46,6 +50,7 @@
   },
   {
     "src": "/src/images/thumbnails/gpo-thumbnail.jpg",
+    "gifSrc": "/src/images/gifs/gpo.gif",
      "url": "https://gpo.com/",
      "title": "GPO",
      "description": "Marketing Site",

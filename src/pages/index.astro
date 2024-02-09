@@ -22,6 +22,7 @@ import ProjectsData from '../data/ProjectsData.json';
               ProjectsData.map((card) => (
                 <Card
                   src={card.src}
+                  gifSrc={card.gifSrc}
                   title={card.title}
                   description={card.description}
                   url={card.url}
@@ -86,7 +87,8 @@ import ProjectsData from '../data/ProjectsData.json';
         const projectUrl = card.querySelector('.c-card__info').getAttribute('data-card-url');
         const projectDetails = card.querySelector('.c-card__details');
         const projectTools = card.querySelector('.c-card__tools');
-        const projectImage = card.querySelector('.c-card__image img');
+        const projectImage = card.querySelector('.c-card__image img'); // currently not being used, since integrating gif 
+        const projectGif = card.querySelector('.c-card__gif img');
         
         document.body.classList.add('is-disabled');
         modalCard.classList.remove('u-scaleout');
@@ -96,7 +98,7 @@ import ProjectsData from '../data/ProjectsData.json';
         modalProjectLink.href = projectUrl;
         modalProjectDetails.innerText = projectDetails.innerText;
         modalProjectTools.innerHTML = projectTools.innerHTML;
-        modalProjectImage.src = projectImage.src;
+        modalProjectImage.src = projectGif.src;
         // Allow users to close modal by clicking the modal element when it's active
         document.querySelector('.c-modal.is-active').addEventListener('click', (e) => {
           if(e.target == e.currentTarget) {

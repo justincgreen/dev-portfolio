@@ -1,6 +1,7 @@
 ---
 const {
   src, 
+  gifSrc,
   title, 
   description, 
   url, 
@@ -19,6 +20,17 @@ const {
     <div class="c-card__image">
       <img src={src} alt={title} />
     </div>
+    
+    {
+      gifSrc 
+      ? 
+      <div class="c-card__gif is-hidden">
+        <img src={gifSrc} alt="gif" />
+      </div>
+      :
+      null
+    }
+    
     <h4 class="c-card__title">{title}</h4>
     <p>{description}</p>
     <p class="c-card__details is-hidden">{details}</p>
