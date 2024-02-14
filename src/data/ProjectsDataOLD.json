@@ -1,0 +1,70 @@
+[
+  {
+   "src": "/src/images/thumbnails/rapid-thumbnail.jpg",
+   "gifSrc": "/src/images/gifs/rapid.gif",
+   "url": "https://rapid-two.vercel.app/",
+   "title": "Rapid",
+   "description": "Prototype UI Builder", 
+   "badgeMeta": [{"label": "Proof of Concept"}, {"label": "React"}],
+   "details": "Rapid started out as a concept to create an application that allowed you to build web components in real time using a GUI (Graphical User Interface). The current state of the application is a proof of concept, it contains 3 starting components with a variety of options to customize each component.",
+   "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}] 
+  },
+  {
+   "src": "/src/images/thumbnails/npt-thumbnail.jpg",
+   "gifSrc": "/src/images/gifs/npt.gif",
+   "url": "https://national-parks-tracker.vercel.app/",
+   "title": "National Parks Tracker",
+   "description": "API Integration", 
+   "badgeMeta": [{"label": "Next"}, {"label": "React"}],
+   "details": "I'm an avid fan of the U.S. National Parks system and enjoy visiting the parks whenever I get the opportunity. I have a goal to visit all 63 parks so I came up with idea to create an application that allowed me to keep track of each National Park I've visited.",
+   "toolsUsed": [{"tool": "Next"}, {"tool": "React"}, {"tool": "National Parks API"}]
+  },
+  {
+    "src": "/src/images/thumbnails/coin-pouch-thumbnail.jpg",
+     "url": "https://coin-pouch.vercel.app/",
+     "title": "Coin Pouch",
+     "description": "Cryptocurrency market data",     
+     "badgeMeta": [{"label": "React"}],
+     "details": "Coin Pouch utilizes the Coin Gecko API to showcase cryptocurrency market data.",
+     "toolsUsed": [{"tool": "React"}, {"tool": "Chart.js"}, {"tool": "Coin Gecko API"}]
+  },
+  {
+    "src": "/src/images/thumbnails/budget-tracker-thumbnail.jpg",
+    "gifSrc": "/src/images/gifs/budget-tracker.gif",
+     "url": "https://budget-tracker-2-next.vercel.app/",
+     "title": "Budget Tracker",
+     "description": "Budgeting tool",
+     "badgeMeta": [{"label": "Next"}, {"label": "React"}],
+     "details": "A web based budget tracking application to help manage and keep track of daily transactions.",
+     "toolsUsed": [{"tool": "Next"}, {"tool": "React"}]
+  },
+  {
+    "src": "/src/images/thumbnails/chainalysis-thumbnail.jpg",
+    "gifSrc": "/src/images/gifs/chainalysis.gif",
+     "url": "https://www.chainalysis.com/",
+     "title": "Chainalysis",
+     "description": "Marketing Site",
+     "badgeMeta": [{"label": "Wordpress"}, {"label": "React"}],
+     "details": "I had the opportunity to collaborate on this project for 1.5 years, in that time I audited existing issues and created solutions to mitigate bottlenecks, created several new page templates and updated key site features such as the main navigation and translation toggle. I also migrated several hundred posts & custom post types from an existing site to bring all blog posts under one site which helped reduce hosting costs.",
+     "toolsUsed": [{"tool": "Wordpress"}, {"tool": "React"}]
+  },
+  {
+    "src": "/src/images/thumbnails/gpo-thumbnail.jpg",
+    "gifSrc": "/src/images/gifs/gpo.gif",
+     "url": "https://gpo.com/",
+     "title": "GPO",
+     "description": "Marketing Site",
+     "badgeMeta": [{"label": "Wordpress"}, {"label": "Sage"}, {"label": "Twig"}],
+     "details": "I was part of a 3 person dev team that built this marketing site from inception to production.",
+     "toolsUsed": [{"tool": "Wordpress"}, {"tool": "Sage"}, {"tool": "Twig"}]
+  },
+  {
+    "src": "/src/images/thumbnails/states-united-thumbnail.jpg",
+     "url": "https://states-united.netlify.app/components/detail/home.html",
+     "title": "States United",
+     "description": "Component Library",
+     "badgeMeta": [{"label": "Fractal"}, {"label": "Twig"}],
+     "details": "States United project details",
+     "toolsUsed": [{"tool": "Fractal"}, {"tool": "Twig"}]
+  }
+]

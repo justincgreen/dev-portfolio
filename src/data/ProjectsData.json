@@ -20,15 +20,6 @@
    "toolsUsed": [{"tool": "Next"}, {"tool": "React"}, {"tool": "National Parks API"}]
   },
   {
-    "src": "/src/images/thumbnails/coin-pouch-thumbnail.jpg",
-     "url": "https://coin-pouch.vercel.app/",
-     "title": "Coin Pouch",
-     "description": "Cryptocurrency market data",     
-     "badgeMeta": [{"label": "React"}],
-     "details": "Coin Pouch utilizes the Coin Gecko API to showcase cryptocurrency market data.",
-     "toolsUsed": [{"tool": "React"}, {"tool": "Chart.js"}, {"tool": "Coin Gecko API"}]
-  },
-  {
     "src": "/src/images/thumbnails/budget-tracker-thumbnail.jpg",
     "gifSrc": "/src/images/gifs/budget-tracker.gif",
      "url": "https://budget-tracker-2-next.vercel.app/",
@@ -39,7 +30,7 @@
      "toolsUsed": [{"tool": "Next"}, {"tool": "React"}]
   },
   {
-    "src": "/src/images/thumbnails/chainalysis-thumbnail.jpg",
+    "src": "/src/images/thumbnails/chainalysis@2x.jpg",
     "gifSrc": "/src/images/gifs/chainalysis.gif",
      "url": "https://www.chainalysis.com/",
      "title": "Chainalysis",
@@ -55,16 +46,27 @@
      "title": "GPO",
      "description": "Marketing Site",
      "badgeMeta": [{"label": "Wordpress"}, {"label": "Sage"}, {"label": "Twig"}],
-     "details": "GPO project details",
+     "details": "I was part of a 3 person dev team that built this marketing site from inception to production.",
      "toolsUsed": [{"tool": "Wordpress"}, {"tool": "Sage"}, {"tool": "Twig"}]
   },
   {
     "src": "/src/images/thumbnails/states-united-thumbnail.jpg",
+    "gifSrc": "/src/images/gifs/states.gif",
      "url": "https://states-united.netlify.app/components/detail/home.html",
      "title": "States United",
      "description": "Component Library",
      "badgeMeta": [{"label": "Fractal"}, {"label": "Twig"}],
-     "details": "States United project details",
+     "details": "Component library",
      "toolsUsed": [{"tool": "Fractal"}, {"tool": "Twig"}]
+  },
+  {
+    "src": "/src/images/thumbnails/smartling@2x.jpg",
+    "gifSrc": "/src/images/gifs/smartling.gif",
+     "url": "https://www.smartling.com/",
+     "title": "Smartling",
+     "description": "Marketing Site",
+     "badgeMeta": [{"label": "Contentful"}, {"label": "Gatsby"}, {"label": "React"}, {"label": "GraphQL"}],
+     "details": "Retainer project, headless site, bug fixes, extend existing features and integrate new layouts.",
+     "toolsUsed": [{"tool": "Contentful"}, {"tool": "Gatsby"}, {"tool": "React"}, {"tool": "GraphQL"}]
   }
 ]
