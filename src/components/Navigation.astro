@@ -1,14 +1,15 @@
 ---
-import { Image } from 'astro:assets';
+// import { Image } from 'astro:assets';
 import github from "../images/github.svg?raw";
 import codepen from "../images/codepen.svg?raw";
-import headshot from "../images/headshot.jpg";
+// import headshot from "../images/headshot.jpg";
 const {text} = Astro.props;
 ---
 
 <nav class="c-navigation">
   <a href="/" class="c-navigation__logo">
-    <Image src={headshot} alt="Justin Green" width="60" height="60" />
+    <!-- <Image src={headshot} alt="Justin Green" width="60" height="60" /> -->
+    <img src="src/images/headshot.jpg" width="60" height="60" alt="Justin Green" />
       
     <div class="c-navigation__logo--meta">
       <p><strong>Justin Green</strong></p>

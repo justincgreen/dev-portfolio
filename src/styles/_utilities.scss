@@ -8,10 +8,17 @@
   display: flex;
 }
 
+.u-display--inline-flex {
+  display: inline-flex;
+}
 .u-justify-content--right {
   justify-content: flex-end;
 }
 
 .is-hidden {
   display: none;
+}
+
+.u-display--flex-gap-10 {
+  gap: var(--space-half);
 }
