@@ -6,26 +6,29 @@ import codepen from "../images/codepen.svg?raw";
 const {text} = Astro.props;
 ---
 
-<nav class="c-navigation">
-  <a href="/" class="c-navigation__logo">
-    <!-- <Image src={headshot} alt="Justin Green" width="60" height="60" /> -->
-    <img src="src/images/headshot.jpg" width="60" height="60" alt="Justin Green" />
+<div class="c-navigation__wrapper">
+  <nav class="c-navigation l-container l-container--lg">
+    
+      <a href="/" class="c-navigation__logo">
+        <!-- <Image src={headshot} alt="Justin Green" width="60" height="60" /> -->
+        <img src="src/images/headshot.jpg" width="60" height="60" alt="Justin Green" />
+          
+        <div class="c-navigation__logo--meta">
+          <p><strong>Justin Green</strong></p>
+          <p>Full-Stack Developer</p>
+        </div>  
+      </a>      
       
-    <div class="c-navigation__logo--meta">
-      <p><strong>Justin Green</strong></p>
-      <p>Full-Stack Developer</p>
-    </div>  
-  </a>      
-  
-  <div class="c-navigation__links">
-    <!-- <a class="c-navigation__link" href="/projects">Projects</a> -->
-    <a class="c-navigation__link" href="/tools">Tools</a>    
-    <a class="c-navigation__link" href="/ui">UI</a>    
-    <a class="c-navigation__link--social" href="https://github.com/justincgreen" target="_blank">
-      <Fragment set:html={github} />
-    </a>
-    <a class="c-navigation__link--social" href="https://codepen.io/justincgreen" target="_blank">
-      <Fragment set:html={codepen} />
-    </a>
-  </div> 
-</nav>
+      <div class="c-navigation__links">
+        <!-- <a class="c-navigation__link" href="/projects">Projects</a> -->
+        <a class="c-navigation__link" href="/tools">Tools</a>    
+        <a class="c-navigation__link" href="/ui">UI</a>    
+        <a class="c-navigation__link--social" href="https://github.com/justincgreen" target="_blank">
+          <Fragment set:html={github} />
+        </a>
+        <a class="c-navigation__link--social" href="https://codepen.io/justincgreen" target="_blank">
+          <Fragment set:html={codepen} />
+        </a>
+      </div> 
+  </nav>
+</div>
