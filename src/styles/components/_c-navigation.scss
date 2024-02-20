@@ -5,7 +5,16 @@
   gap: 20px;  
   
   @include breakpoint(md){
-    justify-content: center;
+    padding: 0 !important; // remove padding from l-container class
+    // height: 75px;
+    // 
+    // &.is-active {
+    //   position: fixed;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   z-index: var(--z-index-300);
+    // }
   }
   
   &__wrapper {
@@ -64,8 +73,23 @@
     gap: 20px;
     
     @include breakpoint(md){
-      display: none;
-    }
+      &.is-active {
+        visibility: visible;
+        transform: translateX(0);
+        opacity: 1;
+      }
+     
+      display: block;
+      position: fixed;
+      inset: 0;
+      top: 75px;
+      padding: 0 var(--space);
+      background-color: var(--c-slate--light);      
+      transform: translateX(-100%);
+      opacity: 0;
+      visibility: hidden; 
+      transition: var(--transition-all);      
+    }    
   }
   
   &__link {

@@ -3,6 +3,7 @@
 import github from "../images/github.svg?raw";
 import codepen from "../images/codepen.svg?raw";
 // import headshot from "../images/headshot.jpg";
+import Navicon from './Navicon.astro'
 const {text} = Astro.props;
 ---
 
@@ -30,5 +31,7 @@ const {text} = Astro.props;
           <Fragment set:html={codepen} />
         </a>
       </div> 
+      
+      <Navicon />
   </nav>
 </div>

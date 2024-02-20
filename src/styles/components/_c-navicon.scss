@@ -1,0 +1,33 @@
+.c-navicon {
+  display: none;
+  
+  @include breakpoint(md){
+    display: block;
+    
+    &.is-active {
+      .c-navicon__bar {
+        &:first-of-type {
+          display: none;
+        }
+        
+        &:nth-of-type(2) {
+          transform: rotate(-45deg);
+        }
+        
+        &:nth-of-type(3) {
+          transform: rotate(45deg);
+          top: -7px;
+        }
+      }
+    }
+  }
+  
+  &__bar {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: var(--c-slate--lightest);     
+    transition: var(--transition-all);  
+    position: relative;
+  }
+}
