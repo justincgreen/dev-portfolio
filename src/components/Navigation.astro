@@ -1,0 +1,37 @@
+---
+// import { Image } from 'astro:assets';
+import github from "../images/github.svg?raw";
+import codepen from "../images/codepen.svg?raw";
+// import headshot from "../images/headshot.jpg";
+import Navicon from './Navicon.astro'
+const {text} = Astro.props;
+---
+
+<div class="c-navigation__wrapper">
+  <nav class="c-navigation l-container l-container--lg">
+    
+      <a href="/" class="c-navigation__logo">
+        <!-- <Image src={headshot} alt="Justin Green" width="60" height="60" /> -->
+        <img src="src/images/headshot.jpg" width="60" height="60" alt="Justin Green" />
+          
+        <div class="c-navigation__logo--meta">
+          <p><strong>Justin Green</strong></p>
+          <p>Front-End Developer</p>
+        </div>  
+      </a>      
+      
+      <div class="c-navigation__links">
+        <!-- <a class="c-navigation__link" href="/projects">Projects</a> -->
+        <a class="c-navigation__link" href="/tools">Tools</a>    
+        <!-- <a class="c-navigation__link" href="/ui">UI</a>     -->
+        <a class="c-navigation__link--social" href="https://github.com/justincgreen" target="_blank">
+          <Fragment set:html={github} />
+        </a>
+        <a class="c-navigation__link--social" href="https://codepen.io/justincgreen" target="_blank">
+          <Fragment set:html={codepen} />
+        </a>
+      </div> 
+      
+      <Navicon />
+  </nav>
+</div>

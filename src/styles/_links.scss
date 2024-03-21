@@ -1,0 +1,8 @@
+.c-link__text {
+  color: var(--c-slate--lightest);
+  transition: var(--transition-all);
+  
+  &:hover {
+    color: var(--c-green);
+  }
+}

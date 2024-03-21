@@ -1,0 +1,68 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fade-up {
+  to {
+    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scalein {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleout {
+  from {
+    transform: scale(1);
+    opacity: 1;    
+  }
+  
+  to {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+.u-scale {
+  animation: scalein 0.5s ease forwards;
+}
+
+.u-scaleout {
+  animation: scaleout 0.5s ease forwards;
+}
+
+.u-fade-up {
+  // transform: scale(0.9);
+  transform: translateY(40px);
+  opacity: 0;
+  animation: fade-up 0.7s ease forwards;
+}
+
+.u-animation-delay {
+  @media(min-width: 768px) {
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.25}s;
+      }
+    }
+  }
+}

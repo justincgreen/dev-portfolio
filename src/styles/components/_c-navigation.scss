@@ -1,0 +1,140 @@
+.c-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;  
+  
+  @include breakpoint(md){
+    padding: 0 !important; // remove padding from l-container class
+    // height: 75px;
+    // 
+    // &.is-active {
+    //   position: fixed;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   z-index: var(--z-index-300);
+    // }
+  }
+  
+  &__wrapper {
+    width: 100%;  
+    padding: 5px 30px;
+    background-color: var(--c-green--mid);
+    // background: rgb(255 255 255 / 5%);
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+    // backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  &__link,
+  &__logo--meta strong {
+    color: var(--c-slate--lightest);
+    transition: var(--transition-all);
+    
+    &:hover {
+      color: var(--c-green);
+    }    
+  }
+  
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--c-white);
+    
+    &:hover {
+      strong {
+        color: var(--c-green);
+      }
+    }
+    
+    img {
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.1)
+    }
+    
+    &--meta {
+      line-height: 1.1;
+      
+      p {
+        &:first-of-type {
+          font-size: var(--font-size--xs);
+        }
+      }
+    }    
+  }
+  
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    @include breakpoint(md){
+      &.is-active {
+        visibility: visible;
+        transform: translateX(0);
+        opacity: 1;
+      }
+     
+      display: block;
+      text-align: center;
+      position: fixed;
+      inset: 0;
+      top: 71px;
+      left: 0;
+      right: 0;
+      padding: 30px;
+      background-color: var(--c-green--dark);
+      transform: translateX(-100%);
+      opacity: 0;
+      visibility: hidden; 
+      transition: var(--transition-all);      
+    }    
+  }
+  
+  &__link {
+    color: var(--c-white);
+    
+    &:hover {
+      color: var(--c-green);
+    }
+    
+    @include breakpoint(md){
+      display: block;
+      margin-bottom: 15px;
+      font-size: var(--font-size--xs);
+    }
+    
+    &--social {
+      width: 30px;
+      height: 30px;  
+      
+      @include breakpoint(md){
+        display: inline-flex;
+        margin-right: 15px;
+        
+        + .c-navigation__link--social {
+          margin-right: 0;
+        }
+      }
+      
+      svg path {
+        transition: var(--transition-all);  
+      }
+            
+      &:hover {
+        svg path {
+          fill: var(--c-green);
+          
+          &.no-fill {
+            fill: transparent;
+          }
+        }
+      }            
+    }
+  }
+}

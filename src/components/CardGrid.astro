@@ -1,0 +1,23 @@
+<div class="c-card-grid">
+  <slot />
+</div>
+
+<style lang="scss">
+  .c-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;  
+    
+    @media(max-width: 1024px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }  
+    
+    @media(max-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    @media(max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

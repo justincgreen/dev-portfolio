@@ -1,0 +1,23 @@
+.c-button {
+  display: inline-block;
+  width: fit-content;
+  background-color: transparent;
+  border-radius: 3px;
+  color: var(--c-slate--lightest);
+  padding: 10px 15px;
+  border: 1px solid var(--c-green);
+  font-size: var(--font-size--base);
+  letter-spacing: .5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    box-shadow: 4px 4px 0 0 var(--c-green);
+    transform: translate(-5px, -5px);
+  }
+  
+  &__group {
+    display: flex;
+    gap: 20px;
+  }
+}

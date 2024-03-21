@@ -1,0 +1,10 @@
+.c-badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: var(--c-green--darkest);
+  color: var(--c-green);
+  font-size: var(--font-size--xxs);
+  letter-spacing: .2px;
+}

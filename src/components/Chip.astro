@@ -1,0 +1,20 @@
+---
+const {title, color, hex} = Astro.props;
+---
+
+<div class="c-chip">
+  <div class={`${color !== undefined ? `c-chip__single c-chip__single--${color}` : "c-chip__single c-chip__single--no-color"}`}></div>
+  <div class="c-chip__right">
+    <p class="c-chip__single--title">{title}</p>
+    <div class="c-chip__single--hex">{hex}</div>
+  </div>
+</div>
+
+<!-- <script define:vars={{color}}>
+  const getColor = () => {
+    if(color === "green--dark") {
+      console.log(color);
+    }
+  }
+ getColor(); 
+</script> -->

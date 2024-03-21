@@ -1,0 +1,82 @@
+[
+  {
+   "src": "/src/images/thumbnails/rapid-thumbnail.jpg",
+   "gifSrc": "/src/images/gifs/rapid.gif",
+   "url": "https://rapid-two.vercel.app/",
+   "title": "Rapid",
+   "description": "Prototype UI Builder", 
+   "badgeMeta": [{"label": "Proof of Concept"}, {"label": "React"}],
+   "details": "Rapid started out as a concept to create an application that allowed you to build web components in real time using a GUI (Graphical User Interface). The current state of the application is a proof of concept, it contains 3 starting components with a variety of options to customize each component.",
+   "toolsUsed": [{"tool": "React"}, {"tool": "React Beautiful DND"}, {"tool": "React Color"}] 
+  },
+  {
+   "src": "/src/images/thumbnails/npt-thumbnail.jpg",
+   "gifSrc": "/src/images/gifs/npt.gif",
+   "url": "https://national-parks-tracker.vercel.app/",
+   "title": "National Parks Tracker",
+   "description": "API Integration", 
+   "badgeMeta": [{"label": "Next"}, {"label": "React"}],
+   "details": "I'm an avid fan of the U.S. National Parks system and enjoy visiting the parks whenever I get the opportunity. I have a goal to visit all 63 parks so I came up with idea to create an application that allowed me to keep track of each National Park I've visited.",
+   "toolsUsed": [{"tool": "Next"}, {"tool": "React"}, {"tool": "National Parks API"}]
+  },
+  {
+    "src": "/src/images/thumbnails/budget-tracker-thumbnail.jpg",
+    "gifSrc": "/src/images/gifs/budget-tracker.gif",
+     "url": "https://budget-tracker-2-next.vercel.app/",
+     "title": "Budget Tracker",
+     "description": "Budgeting tool",
+     "badgeMeta": [{"label": "Next"}, {"label": "React"}],
+     "details": "A web based budget tracking application to help manage and keep track of daily transactions.",
+     "toolsUsed": [{"tool": "Next"}, {"tool": "React"}]
+  },
+  {
+    "src": "/src/images/thumbnails/chainalysis@2x.jpg",
+    "gifSrc": "/src/images/gifs/chainalysis.gif",
+     "url": "https://www.chainalysis.com/",
+     "title": "Chainalysis",
+     "description": "Marketing Site & Blog",
+     "badgeMeta": [{"label": "Wordpress"}, {"label": "React"}],
+     "details": "I had the opportunity to collaborate on this project for 1.5 years, in that time I audited existing issues and created solutions to mitigate bottlenecks, created several new page templates and updated key site features such as the main navigation and translation toggle. I also migrated several hundred posts & custom post types from an existing site to bring all blog posts under one site which helped reduce hosting costs.",
+     "toolsUsed": [{"tool": "Wordpress"}, {"tool": "React"}]
+  },
+  {
+    "src": "/src/images/thumbnails/gpo-thumbnail.jpg",
+    "gifSrc": "/src/images/gifs/gpo.gif",
+     "url": "https://gpo.com/",
+     "title": "GPO",
+     "description": "Marketing Site",
+     "badgeMeta": [{"label": "Wordpress"}, {"label": "Sage"}, {"label": "Twig"}],
+     "details": "I was part of a 3 person dev team that built this marketing site from inception to production.",
+     "toolsUsed": [{"tool": "Wordpress"}, {"tool": "Sage"}, {"tool": "Twig"}]
+  },
+  {
+    "src": "/src/images/thumbnails/states-united-thumbnail.jpg",
+    "gifSrc": "/src/images/gifs/states.gif",
+     "url": "https://states-united.netlify.app/components/detail/home.html",
+     "title": "States United",
+     "description": "Component Library",
+     "badgeMeta": [{"label": "Fractal"}, {"label": "Twig"}],
+     "details": "Component library",
+     "toolsUsed": [{"tool": "Fractal"}, {"tool": "Twig"}]
+  },
+  {
+    "src": "/src/images/thumbnails/smartling@2x.jpg",
+    "gifSrc": "/src/images/gifs/smartling.gif",
+     "url": "https://www.smartling.com/",
+     "title": "Smartling",
+     "description": "Headless Marketing Site & Blog",
+     "badgeMeta": [{"label": "Contentful"}, {"label": "Gatsby"}, {"label": "React"}, {"label": "GraphQL"}],
+     "details": "Retainer project, headless site, bug fixes, extend existing features and integrate new layouts.",
+     "toolsUsed": [{"tool": "Contentful"}, {"tool": "Gatsby"}, {"tool": "React"}, {"tool": "GraphQL"}]
+  },
+  {
+    "src": "/src/images/thumbnails/copyright@2x.jpg",
+    "gifSrc": "/src/images/gifs/copyright.gif",
+     "url": "https://copyrightsociety.org/",
+     "title": "The Copyright Society",
+     "description": "Marketing Site & LMS",
+     "badgeMeta": [{"label": "Wordpress"}, {"label": "MemberPress"}, {"label": "Events Calendar Pro"}],
+     "details": "Marketing site & LMS (Learning Management System)",
+     "toolsUsed": [{"tool": "Wordpress"}, {"tool": "MemberPress"}, {"tool": "Events Calendar Pro"}]
+  }
+]
