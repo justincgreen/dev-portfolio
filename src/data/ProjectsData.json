@@ -1,6 +1,6 @@
 [
   {
-   "src": "/src/images/thumbnails/rapid-thumbnail.jpg",
+   "src": "/thumbnails/rapid-thumbnail.jpg",
    "gifSrc": "/src/images/gifs/rapid.gif",
    "url": "https://rapid-two.vercel.app/",
    "title": "Rapid",
