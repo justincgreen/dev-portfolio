@@ -40,14 +40,14 @@
      "toolsUsed": [{"tool": "Wordpress"}, {"tool": "React"}]
   },
   {
-    "src": "/thumbnails/gpo-thumbnail.jpg",
-    "gifSrc": "/gifs/gpo.gif",
-     "url": "https://gpo.com/",
-     "title": "GPO",
+    "src": "/thumbnails/hm@2x.jpg",
+    "gifSrc": "/gifs/hm.gif",
+     "url": "https://www.holmesmurphy.com/",
+     "title": "Holmes Murphy",
      "description": "Marketing Site",
-     "badgeMeta": [{"label": "Wordpress"}, {"label": "Sage"}, {"label": "Twig"}],
-     "details": "I was part of a 3 person dev team that built this marketing site from inception to production.",
-     "toolsUsed": [{"tool": "Wordpress"}, {"tool": "Sage"}, {"tool": "Twig"}]
+     "badgeMeta": [{"label": "Wordpress"}, {"label": "GSAP"}],
+     "details": "Built out several components, animations & filter functionality for the blog and careers page while working as a team of 5 on this marketing site from inception to production.",
+     "toolsUsed": [{"tool": "Wordpress"}, {"tool" : "GSAP (Greensock)"}]
   },
   {
     "src": "/thumbnails/states-united-thumbnail.jpg",
