@@ -20,9 +20,10 @@
   &__wrapper {
     width: 100%;  
     padding: 5px 30px;
-    background: rgb(255 255 255 / 5%);
+    background-color: var(--c-green--mid);
+    // background: rgb(255 255 255 / 5%);
     border-bottom: 1px solid rgb(255 255 255 / 10%);
-    backdrop-filter: blur(6px);
+    // backdrop-filter: blur(6px);
     position: sticky;
     top: 0;
     left: 0;
@@ -80,11 +81,14 @@
       }
      
       display: block;
+      text-align: center;
       position: fixed;
       inset: 0;
-      top: 75px;
-      padding: 0 var(--space);
-      background-color: var(--c-slate--light);      
+      top: 71px;
+      left: 0;
+      right: 0;
+      padding: 30px;
+      background-color: var(--c-green--dark);
       transform: translateX(-100%);
       opacity: 0;
       visibility: hidden; 
@@ -99,9 +103,24 @@
       color: var(--c-green);
     }
     
+    @include breakpoint(md){
+      display: block;
+      margin-bottom: 15px;
+      font-size: var(--font-size--xs);
+    }
+    
     &--social {
       width: 30px;
       height: 30px;  
+      
+      @include breakpoint(md){
+        display: inline-flex;
+        margin-right: 15px;
+        
+        + .c-navigation__link--social {
+          margin-right: 0;
+        }
+      }
       
       svg path {
         transition: var(--transition-all);  
