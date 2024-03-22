@@ -25,6 +25,10 @@
 
 .font-size--jumbo {
   font-size: var(--font-size--jumbo);
+  
+  @include breakpoint(md){
+    font-size: var(--font-size--xl);
+  }
 }
 
 .font-color--green {
