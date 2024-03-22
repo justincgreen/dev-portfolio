@@ -40,6 +40,10 @@
       width: 90%;
     }
     
+    @include breakpoint(md){
+      padding-top: 50px;
+    }
+    
     &__close-wrapper {
       position: absolute;
       top: var(--space-half);
@@ -121,7 +125,13 @@
   
   &__project-title {
     @include breakpoint(md){
-      font-size: var(--font-size--lg);
+      font-size: var(--font-size--sm);
+    }
+  }
+  
+  &__project-overview {
+    @include breakpoint(md){
+      font-size: var(--font-size--sm);
     }
   }
   
@@ -149,6 +159,10 @@
   
   &__project-details {
     font-size: var(--font-size--xs);
+    
+    @include breakpoint(md){
+      font-size: var(--font-size--xxs);
+    }
   }
   
   &__project-tools-block {

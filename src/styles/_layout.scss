@@ -1,3 +1,9 @@
+.c-main {
+  @include breakpoint(md){
+    margin-top: var(--space-double);
+  }
+}
+
 .l-container {
   padding: 0 var(--space);
   margin: auto;
