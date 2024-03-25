@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Justin Green | Front-End Developer">
+  <main class="c-main u-margin--top--lg">      
+    <div class="l-container l-container--lg">
+      <div class="u-fade-up">
+        <h1 class="font-color--green font-size--jumbo u-text--center">Hey there!</h1>           
+        <p class="c-details u-padding--top--sm">My name is Justin Green, I’ve been a Front-End Developer for the past 10 years and have had the opportunity to collaborate with some amazing people, agencies, and organizations during that time.<br /><br /> 
+        I’m currently a Front-End Developer at <a href="https://southleft.com/" class="c-link__text">Southleft</a>, where I build dynamic websites and web applications utilizing various modern web technologies such as HTML, CSS, PHP, JavaScript, React, Next, Astro, GraphQL & Git.</p>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style lang="scss">
+  .c-details {
+    max-width: 800px;
+    margin: auto;
+    font-size: var(--font-size--sm);
+    
+    @media(max-width: 767px) { 
+      font-size: var(--font-size--xs);
+    }
+  }
+</style>

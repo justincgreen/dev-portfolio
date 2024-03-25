@@ -4,76 +4,78 @@ import iconNova from "../images/icons/nova-app-icon.png";
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Justin Green | Full-Stack Developer">
+<Layout title="Justin Green | Front-End Developer">
   <main class="c-main u-margin--top--lg">      
     <div class="l-container l-container--lg">
       <div class="u-fade-up">
-        <h1 class="font-color--green font-size--jumbo">Tools</h1>        
+        <h1 class="font-color--green font-size--jumbo u-text--center">Tools</h1>        
         
         <div class="c-tool__block u-margin--top--md">
-          <h2>Code Editor</h2>
-          <h3>
+          <h2 class="u-text--center">Code Editor</h2>
+          <h3 class="u-text--center">
             <a href="https://nova.app/" target="_blank" class="c-link__text u-display--inline-flex u-padding--top--xs">
             <!-- <Image src={iconNova} alt="Nova" width="60" height="60" /> -->
             <img src={iconNova.src} width="40" height="40" />
             Nova
             </a>
           </h3>
-          <!-- <p class="u-padding--top--xs">
-            Nova is the successor to Coda 2, I was a big fan of Coda 2 and used it diligently in the past mainly due to the simple interface and built in SFTP capabilities which other code editors at the time didn't offer. So, you had to have an SFTP/FTP app such as FileZilla open at the same time cross referencing files between 2 different apps and that became <strong>VERY</strong> tedious. Once I learned about Nova I made the switch a few years ago and couldn't be happier, Nova is a native mac code editor and yes it is a paid app but if you enjoyed using Coda 2, you will probably like Nova.
-          </p> -->
         </div>     
           
-        <div class="c-tool__block-wrapper">
+        <div class="c-tool__block-wrapper  u-text--center">
           <div class="c-tool__block u-margin--top--md">
             <h2 class="u-padding--bottom--xs">Daily Drivers</h2>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="c-link__text" target="_blank">HTML</a>, 
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="c-link__text" target="_blank">CSS</a>, 
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="c-link__text" target="_blank">JS</a>, 
-            <a href="https://www.php.net/" class="c-link__text" target="_blank">PHP</a>, 
-            <a href="https://twig.symfony.com/" class="c-link__text" target="_blank">Twig</a>, 
-            <a href="https://graphql.org/" class="c-link__text" target="_blank">GraphQL</a>, 
-            <a href="https://react.dev/" class="c-link__text" target="_blank">React</a>, 
-            <a href="https://git-scm.com/" class="c-link__text" target="_blank">Git</a>
+            <div class="font-size--sm">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="c-link__text" target="_blank">HTML</a>, 
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="c-link__text" target="_blank">CSS</a>, 
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="c-link__text" target="_blank">JS</a>, 
+              <a href="https://www.php.net/" class="c-link__text" target="_blank">PHP</a>, 
+              <a href="https://twig.symfony.com/" class="c-link__text" target="_blank">Twig</a>,             
+              <a href="https://react.dev/" class="c-link__text" target="_blank">React</a>, 
+              <a href="https://graphql.org/" class="c-link__text" target="_blank">GraphQL</a>, 
+              <a href="https://git-scm.com/" class="c-link__text" target="_blank">Git</a>,
+              <a href="https://yarnpkg.com/" class="c-link__text" target="_blank">Yarn</a>
+            </div>
           </div>
           
           <div class="c-tool__block u-margin--top--md">
             <h2 class="u-padding--bottom--xs">Frameworks</h2>
-            <a href="https://react.dev/" class="c-link__text" target="_blank">React</a>, 
-            <a href="https://nextjs.org/" class="c-link__text" target="_blank">Next</a>, 
-            <a href="https://nextra.site/" class="c-link__text" target="_blank">Nextra</a>,
-            <a href="https://astro.build/" class="c-link__text" target="_blank">Astro</a>
+            <div class="font-size--sm">
+              <a href="https://react.dev/" class="c-link__text" target="_blank">React</a>, 
+              <a href="https://nextjs.org/" class="c-link__text" target="_blank">Next</a>, 
+              <a href="https://nextra.site/" class="c-link__text" target="_blank">Nextra</a>,
+              <a href="https://astro.build/" class="c-link__text" target="_blank">Astro</a>
+            </div>
           </div>
           
           <div class="c-tool__block u-margin--top--md">
             <h2 class="u-padding--bottom--xs">AI</h2>
-            <a href="https://claude.ai/" class="c-link__text" target="_blank">Claude</a>
+            <div class="font-size--sm">
+              <a href="https://claude.ai/" class="c-link__text" target="_blank">Claude</a>
+            </div>
           </div>
           
           <div class="c-tool__block u-margin--top--md">
             <h2 class="u-padding--bottom--xs">Project Management</h2>
-            <a href="https://www.notion.so/desktop" class="c-link__text" target="_blank">Notion</a>, 
-            <a href="https://linear.app/" class="c-link__text" target="_blank">Linear</a>, 
-            <a href="https://trello.com/" class="c-link__text" target="_blank">Trello</a>, 
-            <a href="https://asana.com/" class="c-link__text" target="_blank">Asana</a>
+            <div class="font-size--sm">
+              <a href="https://www.notion.so/desktop" class="c-link__text" target="_blank">Notion</a>, 
+              <a href="https://linear.app/" class="c-link__text" target="_blank">Linear</a>, 
+              <a href="https://trello.com/" class="c-link__text" target="_blank">Trello</a>, 
+              <a href="https://asana.com/" class="c-link__text" target="_blank">Asana</a>
+            </div>
           </div>
           
           <div class="c-tool__block u-margin--top--md">
             <h2 class="u-padding--bottom--xs">Design/Video</h2>
-            <a href="https://www.figma.com/" class="c-link__text" target="_blank">Figma</a>, 
-            <a href="https://www.adobe.com/products/photoshop.html" class="c-link__text" target="_blank">Photoshop</a>, 
-            <a href="https://www.adobe.com/products/premiere.html" class="c-link__text" target="_blank">Premier</a>,
-            <a href="https://www.apple.com/final-cut-pro/" class="c-link__text" target="_blank">Final Cut Pro</a>
+            <div class="font-size--sm">
+              <a href="https://www.figma.com/" class="c-link__text" target="_blank">Figma</a>, 
+              <a href="https://www.adobe.com/products/photoshop.html" class="c-link__text" target="_blank">Photoshop</a>, 
+              <a href="https://www.adobe.com/products/premiere.html" class="c-link__text" target="_blank">Premier</a>,
+              <a href="https://www.apple.com/final-cut-pro/" class="c-link__text" target="_blank">Final Cut Pro</a>
+            </div>
           </div>
         </div>
-        
-        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quisquam eum incidunt officiis. Sapiente repellendus adipisci sit, magni ipsa assumenda quia natus quod eligendi qui quidem cupiditate totam provident odit ad quas asperiores officia nemo amet in? Possimus dolorem maxime dolor, voluptates dignissimos ad eum a aperiam maiores ea reiciendis?</p> -->
       </div>
     </div>
-    
-    <!-- <h1 class="font-color--green font-size--jumbo">Projects</h1> -->
-    <!-- <h1 class="font-color--green font-size--jumbo">Justin Green</h1>
-    <h2>Front-End Developer</h2> -->
   </main>
 </Layout>
 
