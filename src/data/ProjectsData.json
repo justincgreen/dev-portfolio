@@ -1,5 +1,15 @@
 [
   {
+    "src": "/thumbnails/books-about-programming@2x.jpg",
+    "gifSrc": "/gifs/books-about-programming.gif",
+     "url": "https://booksaboutprogramming.com/",
+     "title": "Books About Programming",
+     "description": "Online Resource Library",
+     "badgeMeta": [{"label": "Wordpress"}],
+     "details": "Online resource library dedicated to providing programmers and coding enthusiasts with a vast collection of books covering various programming languages and topics.",
+     "toolsUsed": [{"tool": "Wordpress"}]
+  },
+  {
    "src": "/thumbnails/rapid-thumbnail.jpg",
    "gifSrc": "/gifs/rapid.gif",
    "url": "https://rapid-two.vercel.app/",
@@ -18,16 +28,6 @@
    "badgeMeta": [{"label": "Next"}, {"label": "React"}],
    "details": "I'm an avid fan of the U.S. National Parks system and enjoy visiting the parks whenever I get the opportunity. I have a goal to visit all 63 parks so I came up with idea to create an application that allowed me to keep track of each National Park I've visited.",
    "toolsUsed": [{"tool": "Next"}, {"tool": "React"}, {"tool": "National Parks API"}]
-  },
-  {
-    "src": "/thumbnails/budget-tracker-thumbnail.jpg",
-    "gifSrc": "/gifs/budget-tracker.gif",
-     "url": "https://budget-tracker-2-next.vercel.app/",
-     "title": "Budget Tracker",
-     "description": "Budgeting tool",
-     "badgeMeta": [{"label": "Next"}, {"label": "React"}],
-     "details": "A web based budget tracking application to help manage and keep track of daily transactions.",
-     "toolsUsed": [{"tool": "Next"}, {"tool": "React"}]
   },
   {
     "src": "/thumbnails/chainalysis@2x.jpg",
