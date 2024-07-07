@@ -122,6 +122,13 @@
         }
       }
       
+      
+      svg {
+        &:last-of-type {
+          border-radius: 5px;
+        }  
+      }
+      
       svg path {
         transition: var(--transition-all);  
       }
