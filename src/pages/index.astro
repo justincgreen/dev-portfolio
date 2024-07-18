@@ -1,6 +1,7 @@
 ---
 // Components
 import Layout from '../layouts/Layout.astro';
+import HomeHero from '../components/HomeHero.astro';
 import CardGrid from '../components/CardGrid.astro';
 import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
@@ -14,7 +15,8 @@ import ProjectsData from '../data/ProjectsData.json';
   <main class="c-main u-margin--top--lg">    
     <div class="l-container l-container--lg">
       <div class="u-fade-up">
-        <h1 class="font-color--green font-size--jumbo u-text--center u-padding--bottom--md">Projects</h1>           
+        <h1 class="font-color--green font-size--jumbo u-text--center u-padding--bottom--md">Projects</h1> 
+        <HomeHero />          
         <div class="u-margin--bottom--lg">             
           <CardGrid>
             {
