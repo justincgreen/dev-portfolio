@@ -30,13 +30,33 @@
    "toolsUsed": [{"tool": "Next"}, {"tool": "React"}, {"tool": "National Parks API"}]
   },
   {
+    "src": "/thumbnails/p72@2x.jpg",
+    "gifSrc": "/gifs/point72.gif",
+     "url": "https://point72.com/",
+     "title": "Point 72",
+     "description": "Marketing Multisite & Blog",
+     "badgeMeta": [{"label": "Wordpress"}, {"label": "Multisite"}],
+     "details": "My role consisted of providing layout updates based on client branding needs for this Wordpress multisite. Managed production, staging, and development environments.",
+     "toolsUsed": [{"tool": "Wordpress"}]
+  },
+  {
+    "src": "/thumbnails/p72ventures@2x.jpg",
+    "gifSrc": "/gifs/p72ventures.gif",
+     "url": "https://p72.vc/",
+     "title": "Point 72 Ventures",
+     "description": "Marketing Multisite & Blog",
+     "badgeMeta": [{"label": "Wordpress"}, {"label": "Multisite"}],
+     "details": "Integrated Mailchimp API for newsletter sign up, provided layout updates based on client branding needs. Managed production, staging, and development environments.",
+     "toolsUsed": [{"tool": "Wordpress"}]
+  },
+  {
     "src": "/thumbnails/chainalysis@2x.jpg",
     "gifSrc": "/gifs/chainalysis.gif",
      "url": "https://www.chainalysis.com/",
      "title": "Chainalysis",
      "description": "Marketing Site & Blog",
      "badgeMeta": [{"label": "Wordpress"}, {"label": "React"}],
-     "details": "I had the opportunity to collaborate on this project for 1.5 years, in that time I audited existing issues and created solutions to mitigate bottlenecks, created several new page templates and updated key site features such as the main navigation and translation toggle. I also migrated several hundred posts & custom post types from an existing site to bring all blog posts under one site which helped reduce hosting costs.",
+     "details": "Collaborated on this project for 1.5 years, audited existing issues and provided solutions to mitigate existing bottlenecks. Created several new page templates and updated key site features, including the main navigation and language translation toggle. Migrated hundreds of posts and custom post types from another site, consolidating all blog posts under one site which reduced hosting costs.",
      "toolsUsed": [{"tool": "Wordpress"}, {"tool": "React"}]
   },
   {
@@ -46,18 +66,8 @@
      "title": "Holmes Murphy",
      "description": "Marketing Site",
      "badgeMeta": [{"label": "Wordpress"}, {"label": "GSAP"}],
-     "details": "Built out several components, animations & filter functionality for the blog and careers page while working as a team of 5 on this marketing site from inception to production.",
+     "details": "Built out several components, animations & filter functionality for the blog and careers page while working as a team of 4 on this marketing site from inception to production.",
      "toolsUsed": [{"tool": "Wordpress"}, {"tool" : "GSAP (Greensock)"}]
-  },
-  {
-    "src": "/thumbnails/states-united-thumbnail.jpg",
-    "gifSrc": "/gifs/states.gif",
-     "url": "https://states-united.netlify.app/components/detail/home.html",
-     "title": "States United",
-     "description": "Component Library",
-     "badgeMeta": [{"label": "Fractal"}, {"label": "Twig"}],
-     "details": "Component library",
-     "toolsUsed": [{"tool": "Fractal"}, {"tool": "Twig"}]
   },
   {
     "src": "/thumbnails/smartling@2x.jpg",
@@ -66,17 +76,7 @@
      "title": "Smartling",
      "description": "Headless Marketing Site & Blog",
      "badgeMeta": [{"label": "Contentful"}, {"label": "Gatsby"}, {"label": "React"}, {"label": "GraphQL"}],
-     "details": "Retainer project, headless site, bug fixes, extend existing features and integrate new layouts.",
+     "details": "Headless site, diagnose bugs and provide fixes, extend existing features and integrate new layouts.",
      "toolsUsed": [{"tool": "Contentful"}, {"tool": "Gatsby"}, {"tool": "React"}, {"tool": "GraphQL"}]
-  },
-  {
-    "src": "/thumbnails/copyright@2x.jpg",
-    "gifSrc": "/gifs/copyright.gif",
-     "url": "https://copyrightsociety.org/",
-     "title": "The Copyright Society",
-     "description": "Marketing Site & LMS",
-     "badgeMeta": [{"label": "Wordpress"}, {"label": "MemberPress"}, {"label": "Events Calendar Pro"}],
-     "details": "Marketing site & LMS (Learning Management System)",
-     "toolsUsed": [{"tool": "Wordpress"}, {"tool": "MemberPress"}, {"tool": "Events Calendar Pro"}]
   }
 ]
