@@ -1,7 +1,7 @@
 {
   "name": "dev-portfolio",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "astro dev",
@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.1.6",
     "astro": "^3.0.12"
   },
   "devDependencies": {
