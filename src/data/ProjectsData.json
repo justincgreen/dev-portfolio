@@ -6,7 +6,7 @@
      "title": "Point 72",
      "description": "Marketing Multisite & Blog",
      "badgeMeta": [{"label": "Wordpress"}, {"label": "Multisite"}],
-     "details": "Worked closely with in-house Marketing team for over a year providing support and site maintenance which included layout updates based on branding needs, implementing  new features, extending existing features, and bug fixes. Managed production, staging, and development environments.",
+     "details": "Worked closely with the Point 72 in-house Marketing team for over a year providing support and site maintenance which included layout updates based on branding needs, implementing  new features, extending existing features, and bug fixes. Managed production, staging, and development environments.",
      "toolsUsed": [{"tool": "Wordpress"}]
   },
   {
@@ -26,7 +26,7 @@
      "title": "Chainalysis",
      "description": "Marketing Site & Blog",
      "badgeMeta": [{"label": "Wordpress"}, {"label": "React"}],
-     "details": "Worked closely with in-house Marketing team for 1.5 years, audited existing issues and provided solutions to mitigate existing bottlenecks. Created several new page templates and updated key site features, including the main navigation and language translation toggle. Migrated hundreds of posts and custom post types from another site, consolidating all blog posts under one site which reduced hosting costs.",
+     "details": "Worked closely with the Chainalysis in-house Marketing team for 1.5 years, audited existing issues and provided solutions to mitigate existing bottlenecks. Created several new page templates and updated key site features, including the main navigation and language translation toggle. Migrated hundreds of posts and custom post types from another site, consolidating all blog posts under one site which reduced hosting costs.",
      "toolsUsed": [{"tool": "Wordpress"}, {"tool": "React"}]
   },
   {
@@ -36,7 +36,7 @@
      "title": "Holmes Murphy",
      "description": "Marketing Site & Blog",
      "badgeMeta": [{"label": "Wordpress"}, {"label": "GSAP"}],
-     "details": "Built out several components, animations, and filter functionality for the blog & careers page. Development Team consisted of 4 developers that collaborated on this marketing site from inception to production.",
+     "details": "Built out several components, animations, and filter functionality for the blog & careers page. Development Team consisted of 4 developers that collaborated on this marketing site from kickoff to production.",
      "toolsUsed": [{"tool": "Wordpress"}, {"tool" : "GSAP (Greensock)"}]
   },
   {
@@ -46,7 +46,7 @@
      "title": "Smartling",
      "description": "Headless Marketing Site & Blog",
      "badgeMeta": [{"label": "Contentful"}, {"label": "Gatsby"}, {"label": "React"}, {"label": "GraphQL"}],
-     "details": "Headless site, diagnosed bugs and provided solutions, extended existing features and integrated new layouts.",
+     "details": "Supported the Smartling in-house marketing team for a year, extended existing features and integrated new layouts, diagnosed bugs and provided solutions that helped improve the uptime of the site.",
      "toolsUsed": [{"tool": "Contentful"}, {"tool": "Gatsby"}, {"tool": "React"}, {"tool": "GraphQL"}]
   },
   {
